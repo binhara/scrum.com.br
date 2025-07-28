@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo sobre Sprint Management: aprenda como gerenciar sprints efetivamente, definir objetivos, duração e implementar melhores práticas.">
+    <meta name="keywords" content="Sprint Management, Scrum Sprints, gestão de sprints, metodologia ágil, time-boxed development, sprint goals">
+    <title>Sprint Management - Guia Completo | Scrum.com.br</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/pages/sprint-management.html">
+    <meta property="og:title" content="Sprint Management - Guia Completo">
+    <meta property="og:description" content="Guia completo sobre Sprint Management: aprenda como gerenciar sprints efetivamente, definir objetivos, duração e implementar melhores práticas.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.scrum.com.br/pages/sprint-management.html">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da Página -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Início</a> 
+                        <span>></span>
+                        <span>Sprint Management</span>
+                    </div>
+                    <h1 class="page-title">Sprint Management</h1>
+                    <p class="page-subtitle">
+                        Guia completo para gerenciar sprints efetivamente no framework Scrum
+                    </p>
+                    <div class="page-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">🚀</div>
+                            <span>Expert</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">⏱️</div>
+                            <span>15 min leitura</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">📊</div>
+                            <span>Métricas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <section class="page-content">
+            <div class="container">
+                <div class="content-layout">
+                    
+                    <!-- Sidebar de Navegação -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-sticky">
+                            <h3>📖 Neste Guia</h3>
+                            <nav class="content-nav">
+                                <a href="#sprints" class="nav-item">O que são Sprints</a>
+                                <a href="#processo" class="nav-item">Processo do Sprint</a>
+                                <a href="#praticas" class="nav-item">Melhores Práticas</a>
+                                <a href="#duracao" class="nav-item">Duração dos Sprints</a>
+                                <a href="#metricas" class="nav-item">Métricas de Sprint</a>
+                                <a href="#desafios" class="nav-item">Desafios Comuns</a>
+                            </nav>
+                            
+                            <!-- Guias Relacionados -->
+                            <div class="related-guides">
+                                <h4>🎯 Próximos Passos</h4>
+                                <div class="related-list">
+                                    <a href="sprint-planning-guide.html" class="related-item">
+                                        <div class="related-icon">📋</div>
+                                        <div class="related-info">
+                                            <strong>Sprint Planning</strong>
+                                            <span>Planejamento eficiente</span>
+                                        </div>
+                                    </a>
+                                    <a href="scrum-ceremonies.html" class="related-item">
+                                        <div class="related-icon">🎭</div>
+                                        <div class="related-info">
+                                            <strong>Cerimônias Scrum</strong>
+                                            <span>Daily, Review, Retrospective</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Conteúdo do Artigo -->
+                    <article class="main-content">
+                        
+                        <!-- Introdução -->
+                        <div class="content-section">
+                            <h2 id="sprints">🚀 O que são Sprints?</h2>
+                            <div class="highlight-box">
+                                <p><strong>Sprint</strong> é um período curto e time-boxed no qual uma equipe Scrum trabalha para completar uma quantidade específica de trabalho. Os sprints quebram projetos complexos em partes gerenciáveis, permitindo que as equipes entreguem trabalho mais rapidamente e se adaptem às mudanças.</p>
+                            </div>
+                            
+                            <p>Os sprints são fundamentais para o framework Scrum e fazem parte da metodologia ágil, focando na entrega de valor de forma iterativa e incremental.</p>
+                        </div>
+
+                        <div class="content-section">
+                            <div class="info-box">
+                                <h3>Características dos Sprints</h3>
+                                <ul>
+                                    <li>Período time-boxed e fixo</li>
+                                    <li>Foco em objetivos específicos</li>
+                                    <li>Entrega de incremento potencialmente utilizável</li>
+                                    <li>Adaptação contínua baseada em feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Processo do Sprint -->
+                        <div class="content-section">
+                            <h2 id="processo">📋 Processo do Sprint</h2>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3>Sprint Planning</h3>
+                                        <p>A equipe decide que trabalho pode ser completado durante o sprint. Cria o sprint backlog e estabelece o objetivo do sprint.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3>Daily Scrum</h3>
+                                        <p>Verificações diárias do progresso da equipe, identificando potenciais bloqueadores e ajustando o plano conforme necessário.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3>Sprint Review</h3>
+                                        <p>Demonstração do trabalho completado aos stakeholders, coletando feedback valioso para o produto.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h3>Sprint Retrospective</h3>
+                                        <p>Identificação de áreas de melhoria para o próximo sprint, focando na otimização contínua do processo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Melhores Práticas -->
+                        <div class="content-section">
+                            <h2 id="praticas">✅ Melhores Práticas</h2>
+                            <div class="practices-grid">
+                                <div class="practice-card success">
+                                    <div class="practice-icon">✅</div>
+                                    <h3>DO's - Faça</h3>
+                                    <ul>
+                                        <li>Defina objetivos claros para o sprint</li>
+                                        <li>Mantenha um backlog bem organizado</li>
+                                        <li>Entenda a velocidade da equipe</li>
+                                        <li>Capture decisões em ferramentas de gestão</li>
+                                        <li>Foque em entregas de valor</li>
+                                    </ul>
+                                </div>
+                                <div class="practice-card warning">
+                                    <div class="practice-icon">❌</div>
+                                    <h3>DON'Ts - Evite</h3>
+                                    <ul>
+                                        <li>Não superestime a velocidade da equipe</li>
+                                        <li>Evite puxar muitas histórias para o sprint</li>
+                                        <li>Não ignore preocupações da equipe</li>
+                                        <li>Evite trabalhos de alto risco ou desconhecidos</li>
+                                        <li>Não mude o escopo durante o sprint</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Duração dos Sprints -->
+                        <div class="content-section">
+                            <h2 id="duracao">⏰ Duração dos Sprints</h2>
+                            <div class="duration-grid">
+                                <div class="duration-card">
+                                    <h3>1 semana</h3>
+                                    <div class="duration-pros-cons">
+                                        <div class="pros">
+                                            <h4>Prós:</h4>
+                                            <ul>
+                                                <li>Feedback muito rápido</li>
+                                                <li>Adaptação ágil a mudanças</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h4>Contras:</h4>
+                                            <ul>
+                                                <li>Muita sobrecarga de cerimônias</li>
+                                                <li>Pouco tempo para desenvolvimento</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="duration-card recommended">
+                                    <h3>2 semanas</h3>
+                                    <div class="recommended-badge">Recomendado</div>
+                                    <div class="duration-pros-cons">
+                                        <div class="pros">
+                                            <h4>Prós:</h4>
+                                            <ul>
+                                                <li>Equilíbrio ideal entre feedback e desenvolvimento</li>
+                                                <li>Tempo suficiente para planejamento e entrega</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h4>Contras:</h4>
+                                            <ul>
+                                                <li>Requer disciplina na gestão do tempo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="duration-card">
+                                    <h3>4 semanas</h3>
+                                    <div class="duration-pros-cons">
+                                        <div class="pros">
+                                            <h4>Prós:</h4>
+                                            <ul>
+                                                <li>Mais tempo para desenvolvimento complexo</li>
+                                                <li>Menos sobrecarga de cerimônias</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h4>Contras:</h4>
+                                            <ul>
+                                                <li>Feedback menos frequente</li>
+                                                <li>Maior risco de perder o foco</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Métricas de Sprint -->
+                        <div class="content-section">
+                            <h2 id="metricas">📊 Métricas de Sprint</h2>
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-icon">📈</div>
+                                    <h3>Velocidade</h3>
+                                    <p>Quantidade de work items completados por sprint. Ajuda no planejamento de sprints futuros e estimativa de capacidade da equipe.</p>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">🔥</div>
+                                    <h3>Burndown Chart</h3>
+                                    <p>Gráfico que mostra o trabalho restante ao longo do tempo. Permite acompanhar o progresso e identificar possíveis problemas precocemente.</p>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">🎯</div>
+                                    <h3>Commitment vs. Delivery</h3>
+                                    <p>Comparação entre o que foi planejado e o que foi realmente entregue. Indica a precisão do planejamento da equipe.</p>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">⚡</div>
+                                    <h3>Sprint Goal Success</h3>
+                                    <p>Percentual de objetivos de sprint atingidos com sucesso. Mede a efetividade do foco e planejamento da equipe.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desafios Comuns -->
+                        <div class="content-section">
+                            <h2 id="desafios">⚠️ Desafios Comuns e Soluções</h2>
+                            <div class="challenges-grid">
+                                <div class="challenge-card">
+                                    <h3>Sprint Scope Creep</h3>
+                                    <div class="challenge-problem">
+                                        <h4>Problema:</h4>
+                                        <p>Adição de novos trabalhos durante o sprint, comprometendo o objetivo original.</p>
+                                    </div>
+                                    <div class="challenge-solution">
+                                        <h4>Solução:</h4>
+                                        <p>Proteger o sprint backlog, usando o product backlog para novas solicitações.</p>
+                                    </div>
+                                </div>
+                                <div class="challenge-card">
+                                    <h3>Over-commitment</h3>
+                                    <div class="challenge-problem">
+                                        <h4>Problema:</h4>
+                                        <p>Equipe compromete-se com mais trabalho do que consegue entregar no tempo disponível.</p>
+                                    </div>
+                                    <div class="challenge-solution">
+                                        <h4>Solução:</h4>
+                                        <p>Usar dados históricos de velocidade e deixar buffer para imprevistos.</p>
+                                    </div>
+                                </div>
+                                <div class="challenge-card">
+                                    <h3>Incomplete Stories</h3>
+                                    <div class="challenge-problem">
+                                        <h4>Problema:</h4>
+                                        <p>Histórias não completadas ao final do sprint, impactando a entrega de valor.</p>
+                                    </div>
+                                    <div class="challenge-solution">
+                                        <h4>Solução:</h4>
+                                        <p>Quebrar histórias grandes, melhorar estimativas e focar na definição de "pronto".</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="content-cta">
+                            <div class="cta-content">
+                                <h2>🚀 Pronto para otimizar seu Sprint Management?</h2>
+                                <p>Descubra como a TaskTracker pode facilitar o gerenciamento dos seus sprints!</p>
+                                <div class="cta-buttons">
+                                    <a href="tasktracker.html" class="btn btn-primary">
+                                        Experimente a TaskTracker
+                                    </a>
+                                    <a href="sprint-planning-guide.html" class="btn btn-secondary">
+                                        Guia de Sprint Planning
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>O maior portal de conteúdo sobre metodologia Scrum no Brasil, com guias detalhados e melhores práticas para transformar equipes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="sprint-management.html">Sprint Management</a></li>
+                            <li><a href="sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="tasktracker.html">TaskTracker</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+                        
+                        <p data-pt="Os sprints são fundamentais para o framework Scrum e fazem parte da metodologia ágil, focando na entrega de valor de forma iterativa e incremental." data-en="Sprints are fundamental to the Scrum framework and are part of agile methodology, focusing on delivering value in an iterative and incremental way.">
+                            Os sprints são fundamentais para o framework Scrum e fazem parte da metodologia ágil, focando na entrega de valor de forma iterativa e incremental.
+                        </p>
+                    </div>
+                    <div class="content-sidebar">
+                        <div class="info-box">
+                            <h3 data-pt="Características dos Sprints" data-en="Sprint Characteristics">Características dos Sprints</h3>
+                            <ul>
+                                <li data-pt="Período time-boxed e fixo" data-en="Time-boxed and fixed period">Período time-boxed e fixo</li>
+                                <li data-pt="Foco em objetivos específicos" data-en="Focus on specific goals">Foco em objetivos específicos</li>
+                                <li data-pt="Entrega de incremento potencialmente utilizável" data-en="Delivery of potentially usable increment">Entrega de incremento potencialmente utilizável</li>
+                                <li data-pt="Adaptação contínua baseada em feedback" data-en="Continuous adaptation based on feedback">Adaptação contínua baseada em feedback</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sprint Process -->
+        <section class="content-section alt-bg">
+            <div class="container">
+                <h2 data-pt="Processo do Sprint" data-en="Sprint Process">Processo do Sprint</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Sprint Planning</h3>
+                            <p data-pt="A equipe decide que trabalho pode ser completado durante o sprint. Cria o sprint backlog e estabelece o objetivo do sprint." data-en="The team decides what work can be completed during the sprint. Creates the sprint backlog and establishes the sprint goal.">
+                                A equipe decide que trabalho pode ser completado durante o sprint. Cria o sprint backlog e estabelece o objetivo do sprint.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Daily Scrum</h3>
+                            <p data-pt="Verificações diárias do progresso da equipe, identificando potenciais bloqueadores e ajustando o plano conforme necessário." data-en="Daily check-ins on team progress, identifying potential blockers and adjusting the plan as needed.">
+                                Verificações diárias do progresso da equipe, identificando potenciais bloqueadores e ajustando o plano conforme necessário.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Sprint Review</h3>
+                            <p data-pt="Demonstração do trabalho completado aos stakeholders, coletando feedback valioso para o produto." data-en="Demonstration of completed work to stakeholders, collecting valuable product feedback.">
+                                Demonstração do trabalho completado aos stakeholders, coletando feedback valioso para o produto.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Sprint Retrospective</h3>
+                            <p data-pt="Identificação de áreas de melhoria para o próximo sprint, focando na otimização contínua do processo." data-en="Identifying areas for improvement for the next sprint, focusing on continuous process optimization.">
+                                Identificação de áreas de melhoria para o próximo sprint, focando na otimização contínua do processo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices -->
+        <section class="content-section">
+            <div class="container">
+                <h2 data-pt="Melhores Práticas" data-en="Best Practices">Melhores Práticas</h2>
+                <div class="practices-grid">
+                    <div class="practice-card success">
+                        <div class="practice-icon">✅</div>
+                        <h3 data-pt="DO's - Faça" data-en="DO's - Do">DO's - Faça</h3>
+                        <ul>
+                            <li data-pt="Defina objetivos claros para o sprint" data-en="Set clear sprint goals">Defina objetivos claros para o sprint</li>
+                            <li data-pt="Mantenha um backlog bem organizado" data-en="Maintain a well-groomed backlog">Mantenha um backlog bem organizado</li>
+                            <li data-pt="Entenda a velocidade da equipe" data-en="Understand team velocity">Entenda a velocidade da equipe</li>
+                            <li data-pt="Capture decisões em ferramentas de gestão" data-en="Capture decisions in project management tools">Capture decisões em ferramentas de gestão</li>
+                            <li data-pt="Foque em entregas de valor" data-en="Focus on value delivery">Foque em entregas de valor</li>
+                        </ul>
+                    </div>
+                    <div class="practice-card warning">
+                        <div class="practice-icon">❌</div>
+                        <h3 data-pt="DON'Ts - Evite" data-en="DON'Ts - Avoid">DON'Ts - Evite</h3>
+                        <ul>
+                            <li data-pt="Não superestime a velocidade da equipe" data-en="Don't overestimate team velocity">Não superestime a velocidade da equipe</li>
+                            <li data-pt="Evite puxar muitas histórias para o sprint" data-en="Avoid pulling too many stories into the sprint">Evite puxar muitas histórias para o sprint</li>
+                            <li data-pt="Não ignore preocupações da equipe" data-en="Don't ignore team concerns">Não ignore preocupações da equipe</li>
+                            <li data-pt="Evite trabalhos de alto risco ou desconhecidos" data-en="Avoid high-risk or unknown work">Evite trabalhos de alto risco ou desconhecidos</li>
+                            <li data-pt="Não mude o escopo durante o sprint" data-en="Don't change scope during sprint">Não mude o escopo durante o sprint</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sprint Duration -->
+        <section class="content-section alt-bg">
+            <div class="container">
+                <h2 data-pt="Duração dos Sprints" data-en="Sprint Duration">Duração dos Sprints</h2>
+                <div class="duration-grid">
+                    <div class="duration-card">
+                        <h3>1 semana</h3>
+                        <div class="duration-pros-cons">
+                            <div class="pros">
+                                <h4 data-pt="Prós:" data-en="Pros:">Prós:</h4>
+                                <ul>
+                                    <li data-pt="Feedback muito rápido" data-en="Very fast feedback">Feedback muito rápido</li>
+                                    <li data-pt="Adaptação ágil a mudanças" data-en="Agile adaptation to changes">Adaptação ágil a mudanças</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4 data-pt="Contras:" data-en="Cons:">Contras:</h4>
+                                <ul>
+                                    <li data-pt="Muita sobrecarga de cerimônias" data-en="High ceremony overhead">Muita sobrecarga de cerimônias</li>
+                                    <li data-pt="Pouco tempo para desenvolvimento" data-en="Little time for development">Pouco tempo para desenvolvimento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duration-card recommended">
+                        <h3>2 semanas</h3>
+                        <div class="recommended-badge" data-pt="Recomendado" data-en="Recommended">Recomendado</div>
+                        <div class="duration-pros-cons">
+                            <div class="pros">
+                                <h4 data-pt="Prós:" data-en="Pros:">Prós:</h4>
+                                <ul>
+                                    <li data-pt="Equilíbrio ideal entre feedback e desenvolvimento" data-en="Ideal balance between feedback and development">Equilíbrio ideal entre feedback e desenvolvimento</li>
+                                    <li data-pt="Tempo suficiente para planejamento e entrega" data-en="Enough time for planning and delivery">Tempo suficiente para planejamento e entrega</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4 data-pt="Contras:" data-en="Cons:">Contras:</h4>
+                                <ul>
+                                    <li data-pt="Requer disciplina na gestão do tempo" data-en="Requires discipline in time management">Requer disciplina na gestão do tempo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duration-card">
+                        <h3>4 semanas</h3>
+                        <div class="duration-pros-cons">
+                            <div class="pros">
+                                <h4 data-pt="Prós:" data-en="Pros:">Prós:</h4>
+                                <ul>
+                                    <li data-pt="Mais tempo para desenvolvimento complexo" data-en="More time for complex development">Mais tempo para desenvolvimento complexo</li>
+                                    <li data-pt="Menos sobrecarga de cerimônias" data-en="Less ceremony overhead">Menos sobrecarga de cerimônias</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4 data-pt="Contras:" data-en="Cons:">Contras:</h4>
+                                <ul>
+                                    <li data-pt="Feedback menos frequente" data-en="Less frequent feedback">Feedback menos frequente</li>
+                                    <li data-pt="Maior risco de perder o foco" data-en="Higher risk of losing focus">Maior risco de perder o foco</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sprint Metrics -->
+        <section class="content-section">
+            <div class="container">
+                <h2 data-pt="Métricas de Sprint" data-en="Sprint Metrics">Métricas de Sprint</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon">📈</div>
+                        <h3 data-pt="Velocidade" data-en="Velocity">Velocidade</h3>
+                        <p data-pt="Quantidade de work items completados por sprint. Ajuda no planejamento de sprints futuros e estimativa de capacidade da equipe." data-en="Number of work items completed per sprint. Helps in planning future sprints and estimating team capacity.">
+                            Quantidade de work items completados por sprint. Ajuda no planejamento de sprints futuros e estimativa de capacidade da equipe.
+                        </p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">🔥</div>
+                        <h3 data-pt="Burndown Chart" data-en="Burndown Chart">Burndown Chart</h3>
+                        <p data-pt="Gráfico que mostra o trabalho restante ao longo do tempo. Permite acompanhar o progresso e identificar possíveis problemas precocemente." data-en="Chart showing remaining work over time. Allows tracking progress and identifying potential issues early.">
+                            Gráfico que mostra o trabalho restante ao longo do tempo. Permite acompanhar o progresso e identificar possíveis problemas precocemente.
+                        </p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">🎯</div>
+                        <h3 data-pt="Commitment vs. Delivery" data-en="Commitment vs. Delivery">Commitment vs. Delivery</h3>
+                        <p data-pt="Comparação entre o que foi planejado e o que foi realmente entregue. Indica a precisão do planejamento da equipe." data-en="Comparison between what was planned and what was actually delivered. Indicates team planning accuracy.">
+                            Comparação entre o que foi planejado e o que foi realmente entregue. Indica a precisão do planejamento da equipe.
+                        </p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">⚡</div>
+                        <h3 data-pt="Sprint Goal Success" data-en="Sprint Goal Success">Sprint Goal Success</h3>
+                        <p data-pt="Percentual de objetivos de sprint atingidos com sucesso. Mede a efetividade do foco e planejamento da equipe." data-en="Percentage of sprint goals successfully achieved. Measures team focus and planning effectiveness.">
+                            Percentual de objetivos de sprint atingidos com sucesso. Mede a efetividade do foco e planejamento da equipe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Challenges -->
+        <section class="content-section alt-bg">
+            <div class="container">
+                <h2 data-pt="Desafios Comuns e Soluções" data-en="Common Challenges and Solutions">Desafios Comuns e Soluções</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h3 data-pt="Sprint Scope Creep" data-en="Sprint Scope Creep">Sprint Scope Creep</h3>
+                        <div class="challenge-problem">
+                            <h4 data-pt="Problema:" data-en="Problem:">Problema:</h4>
+                            <p data-pt="Adição de novos trabalhos durante o sprint, comprometendo o objetivo original." data-en="Adding new work during sprint, compromising the original goal.">
+                                Adição de novos trabalhos durante o sprint, comprometendo o objetivo original.
+                            </p>
+                        </div>
+                        <div class="challenge-solution">
+                            <h4 data-pt="Solução:" data-en="Solution:">Solução:</h4>
+                            <p data-pt="Proteger o sprint backlog, usando o product backlog para novas solicitações." data-en="Protect sprint backlog, use product backlog for new requests.">
+                                Proteger o sprint backlog, usando o product backlog para novas solicitações.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <h3 data-pt="Over-commitment" data-en="Over-commitment">Over-commitment</h3>
+                        <div class="challenge-problem">
+                            <h4 data-pt="Problema:" data-en="Problem:">Problema:</h4>
+                            <p data-pt="Equipe compromete-se com mais trabalho do que consegue entregar no tempo disponível." data-en="Team commits to more work than they can deliver in available time.">
+                                Equipe compromete-se com mais trabalho do que consegue entregar no tempo disponível.
+                            </p>
+                        </div>
+                        <div class="challenge-solution">
+                            <h4 data-pt="Solução:" data-en="Solution:">Solução:</h4>
+                            <p data-pt="Usar dados históricos de velocidade e deixar buffer para imprevistos." data-en="Use historical velocity data and leave buffer for unexpected issues.">
+                                Usar dados históricos de velocidade e deixar buffer para imprevistos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <h3 data-pt="Incomplete Stories" data-en="Incomplete Stories">Incomplete Stories</h3>
+                        <div class="challenge-problem">
+                            <h4 data-pt="Problema:" data-en="Problem:">Problema:</h4>
+                            <p data-pt="Histórias não completadas ao final do sprint, impactando a entrega de valor." data-en="Stories not completed by sprint end, impacting value delivery.">
+                                Histórias não completadas ao final do sprint, impactando a entrega de valor.
+                            </p>
+                        </div>
+                        <div class="challenge-solution">
+                            <h4 data-pt="Solução:" data-en="Solution:">Solução:</h4>
+                            <p data-pt="Quebrar histórias grandes, melhorar estimativas e focar na definição de 'pronto'." data-en="Break down large stories, improve estimates and focus on definition of 'done'.">
+                                Quebrar histórias grandes, melhorar estimativas e focar na definição de "pronto".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-pt="Pronto para implementar Sprint Management efetivo?" data-en="Ready to implement effective Sprint Management?">Pronto para implementar Sprint Management efetivo?</h2>
+                    <p data-pt="Descubra como a TaskTracker pode facilitar o gerenciamento dos seus sprints com ferramentas visuais e métricas em tempo real." data-en="Discover how TaskTracker can facilitate your sprint management with visual tools and real-time metrics.">
+                        Descubra como a TaskTracker pode facilitar o gerenciamento dos seus sprints com ferramentas visuais e métricas em tempo real.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="tasktracker.html" class="btn btn-primary" data-pt="Experimente a TaskTracker" data-en="Try TaskTracker">Experimente a TaskTracker</a>
+                        <a href="sprint-planning-guide.html" class="btn btn-outline" data-pt="Guia de Sprint Planning" data-en="Sprint Planning Guide">Guia de Sprint Planning</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p data-pt="Portal dedicado à metodologia Scrum, TaskTracker e inovações em IA e Big Data." data-en="Portal dedicated to Scrum methodology, TaskTracker and innovations in AI and Big Data.">
+                        Portal dedicado à metodologia Scrum, TaskTracker e inovações em IA e Big Data.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Guias Scrum" data-en="Scrum Guides">Guias Scrum</h3>
+                    <ul>
+                        <li><a href="sobre-scrum.html" data-pt="Sobre Scrum" data-en="About Scrum">Sobre Scrum</a></li>
+                        <li><a href="sprint-management.html" data-pt="Sprint Management" data-en="Sprint Management">Sprint Management</a></li>
+                        <li><a href="sprint-planning-guide.html" data-pt="Sprint Planning" data-en="Sprint Planning">Sprint Planning</a></li>
+                        <li><a href="scrum-ceremonies.html" data-pt="Cerimônias Scrum" data-en="Scrum Ceremonies">Cerimônias Scrum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Parceiros" data-en="Partners">Parceiros</h3>
+                    <ul>
+                        <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                        <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Conecte-se" data-en="Connect">Conecte-se</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

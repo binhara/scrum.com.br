@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal Scrum: Aprenda sobre a metodologia Scrum, conheça a ferramenta TaskTracker e descubra cursos de IA e eventos de Big Data.">
+    <meta name="keywords" content="Scrum, metodologias ágeis, gestão de projetos, task management, TaskTracker, Inteligência Artificial, Big Data, cursos de IA">
+    <title>Scrum.com.br - Metodologia Ágil e TaskTracker</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/modern-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/">
+    <meta property="og:title" content="Scrum.com.br - Metodologia Ágil e TaskTracker">
+    <meta property="og:description" content="Portal Scrum: Aprenda sobre a metodologia Scrum, conheça a ferramenta TaskTracker e descubra cursos de IA e eventos de Big Data.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.scrum.com.br/">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                    <span class="logo-text">Scrum.com.br</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link active">Início</a></li>
+                        <li><a href="pages/sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-link" data-pt="Guias" data-en="Guides">Guias ▼</a>
+                            <div class="nav-dropdown-content">
+                                <a href="pages/sprint-management.html" data-pt="Sprint Management" data-en="Sprint Management">Sprint Management</a>
+                                <a href="pages/sprint-planning-guide.html" data-pt="Sprint Planning" data-en="Sprint Planning">Sprint Planning</a>
+                                <a href="pages/scrum-ceremonies.html" data-pt="Cerimônias Scrum" data-en="Scrum Ceremonies">Cerimônias Scrum</a>
+                                <a href="pages/product-backlog-management.html" data-pt="Product Backlog" data-en="Product Backlog">Product Backlog</a>
+                            </div>
+                        </li>
+                        <li><a href="pages/tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="pages/contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 Português</option>
+                                <option value="en">🇺🇸 English</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-pt="Bem-vindo ao Portal Scrum" data-en="Welcome to Scrum Portal">Bem-vindo ao Portal Scrum</h1>
+                    <p class="hero-subtitle" data-pt="Descubra como a metodologia Scrum pode transformar sua equipe e conheça a TaskTracker, a ferramenta ideal para gestão de projetos ágeis." data-en="Discover how the Scrum methodology can transform your team and get to know TaskTracker, the ideal tool for agile project management.">
+                        Descubra como a metodologia Scrum pode transformar sua equipe e conheça a TaskTracker, a ferramenta ideal para gestão de projetos ágeis.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="pages/tasktracker.html" class="btn btn-primary" data-pt="Experimente a TaskTracker" data-en="Try TaskTracker">Experimente a TaskTracker</a>
+                        <a href="pages/sobre-scrum.html" class="btn btn-secondary" data-pt="Saiba mais sobre Scrum" data-en="Learn more about Scrum">Saiba mais sobre Scrum</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/scrum-kanban-board.png" alt="Quadro Kanban Scrum" class="kanban-illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- TaskTracker Features -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title" data-pt="TaskTracker: Sua Ferramenta Scrum Completa" data-en="TaskTracker: Your Complete Scrum Tool">TaskTracker: Sua Ferramenta Scrum Completa</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" data-icon="KB">KB</div>
+                        <h3 data-pt="Kanban Interativo" data-en="Interactive Kanban">Kanban Interativo</h3>
+                        <p data-pt="Visualização drag-and-drop com colunas personalizáveis e filtros avançados" data-en="Drag-and-drop visualization with customizable columns and advanced filters">
+                            Visualização drag-and-drop com colunas personalizáveis e filtros avançados
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" data-icon="BD">BD</div>
+                        <h3 data-pt="Gráfico de Burndown" data-en="Burndown Chart">Gráfico de Burndown</h3>
+                        <p data-pt="Acompanhe o progresso da sprint com métricas detalhadas e comparação com linha ideal" data-en="Track sprint progress with detailed metrics and ideal line comparison">
+                            Acompanhe o progresso da sprint com métricas detalhadas e comparação com linha ideal
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" data-icon="SP">SP</div>
+                        <h3 data-pt="Gestão de Sprints" data-en="Sprint Management">Gestão de Sprints</h3>
+                        <p data-pt="Ciclos de 10 dias com relatórios automáticos e histórico completo" data-en="10-day cycles with automatic reports and complete history">
+                            Ciclos de 10 dias com relatórios automáticos e histórico completo
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" data-icon="GS">GS</div>
+                        <h3 data-pt="Integração Google Sheets" data-en="Google Sheets Integration">Integração Google Sheets</h3>
+                        <p data-pt="Sincronização bidirecional e compartilhamento por e-mail com autenticação OAuth2" data-en="Bidirectional sync and email sharing with OAuth2 authentication">
+                            Sincronização bidirecional e compartilhamento por e-mail com autenticação OAuth2
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <h2 class="section-title" data-pt="Nossos Parceiros" data-en="Our Partners">Nossos Parceiros</h2>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <a href="https://www.oworkshop.com.br" target="_blank" rel="noopener">
+                            <img src="assets/images/oworkshop_banner.png" alt="Banner OWorkshop - Cursos de IA" class="partner-banner">
+                            <div class="partner-info">
+                                <img src="assets/images/oworkshop_logo.svg" alt="Logo OWorkshop" class="partner-logo">
+                                <h3 data-pt="Cursos de Inteligência Artificial" data-en="Artificial Intelligence Courses">Cursos de Inteligência Artificial</h3>
+                                <p data-pt="Aprenda IA com especialistas e transforme sua carreira" data-en="Learn AI with experts and transform your career">
+                                    Aprenda IA com especialistas e transforme sua carreira
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-card">
+                        <a href="https://www.dssbr.com.br" target="_blank" rel="noopener">
+                            <img src="assets/images/dssbr_banner.png" alt="Banner DSSBR - Data Science Summit" class="partner-banner">
+                            <div class="partner-info">
+                                <img src="assets/images/dssbr_logo.svg" alt="Logo DSSBR" class="partner-logo">
+                                <h3 data-pt="Data Science Summit Brasil" data-en="Data Science Summit Brazil">Data Science Summit Brasil</h3>
+                                <p data-pt="O maior congresso de Big Data e Ciência de Dados do Brasil" data-en="Brazil's largest Big Data and Data Science congress">
+                                    O maior congresso de Big Data e Ciência de Dados do Brasil
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrum Guides Section -->
+        <section class="scrum-guides">
+            <div class="container">
+                <h2 class="section-title" data-pt="Guias Completos de Scrum" data-en="Complete Scrum Guides">Guias Completos de Scrum</h2>
+                <p class="section-description" data-pt="Aprenda Scrum com nossos guias detalhados baseados nas melhores práticas da indústria" data-en="Learn Scrum with our detailed guides based on industry best practices">
+                    Aprenda Scrum com nossos guias detalhados baseados nas melhores práticas da indústria
+                </p>
+                <div class="guides-grid">
+                    <div class="guide-card featured">
+                        <div class="guide-icon">🚀</div>
+                        <h3><a href="pages/sprint-management.html" data-pt="Sprint Management" data-en="Sprint Management">Sprint Management</a></h3>
+                        <p data-pt="Guia completo para gerenciar sprints efetivamente: duração, planejamento, métricas e melhores práticas para sucesso." data-en="Complete guide to manage sprints effectively: duration, planning, metrics and best practices for success.">
+                            Guia completo para gerenciar sprints efetivamente: duração, planejamento, métricas e melhores práticas para sucesso.
+                        </p>
+                        <div class="guide-meta">
+                            <span class="guide-time" data-pt="15 min leitura" data-en="15 min read">15 min leitura</span>
+                            <span class="guide-level" data-pt="Intermediário" data-en="Intermediate">Intermediário</span>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">📋</div>
+                        <h3><a href="pages/sprint-planning-guide.html" data-pt="Sprint Planning Guide" data-en="Sprint Planning Guide">Sprint Planning Guide</a></h3>
+                        <p data-pt="Aprenda a planejar sprints efetivos com objetivos claros, estimativas precisas e planos de sucesso motivacionais." data-en="Learn to plan effective sprints with clear objectives, precise estimates and motivational success plans.">
+                            Aprenda a planejar sprints efetivos com objetivos claros, estimativas precisas e planos de sucesso motivacionais.
+                        </p>
+                        <div class="guide-meta">
+                            <span class="guide-time" data-pt="12 min leitura" data-en="12 min read">12 min leitura</span>
+                            <span class="guide-level" data-pt="Intermediário" data-en="Intermediate">Intermediário</span>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">🎭</div>
+                        <h3><a href="pages/scrum-ceremonies.html" data-pt="Scrum Ceremonies" data-en="Scrum Ceremonies">Scrum Ceremonies</a></h3>
+                        <p data-pt="Domine todas as cerimônias Scrum: Sprint Planning, Daily Standups, Sprint Review e Retrospectives com técnicas práticas." data-en="Master all Scrum ceremonies: Sprint Planning, Daily Standups, Sprint Review and Retrospectives with practical techniques.">
+                            Domine todas as cerimônias Scrum: Sprint Planning, Daily Standups, Sprint Review e Retrospectives com técnicas práticas.
+                        </p>
+                        <div class="guide-meta">
+                            <span class="guide-time" data-pt="18 min leitura" data-en="18 min read">18 min leitura</span>
+                            <span class="guide-level" data-pt="Todos os níveis" data-en="All levels">Todos os níveis</span>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">📚</div>
+                        <h3><a href="pages/product-backlog-management.html" data-pt="Product Backlog Management" data-en="Product Backlog Management">Product Backlog Management</a></h3>
+                        <p data-pt="Técnicas avançadas de priorização: MoSCoW, Weighted Scoring, matrizes Esforço vs Impacto e gestão de user stories." data-en="Advanced prioritization techniques: MoSCoW, Weighted Scoring, Effort vs Impact matrices and user story management.">
+                            Técnicas avançadas de priorização: MoSCoW, Weighted Scoring, matrizes Esforço vs Impacto e gestão de user stories.
+                        </p>
+                        <div class="guide-meta">
+                            <span class="guide-time" data-pt="20 min leitura" data-en="20 min read">20 min leitura</span>
+                            <span class="guide-level" data-pt="Avançado" data-en="Advanced">Avançado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="guides-cta">
+                    <a href="pages/sobre-scrum.html" class="btn btn-outline" data-pt="Ver Todos os Guias Scrum" data-en="View All Scrum Guides">Ver Todos os Guias Scrum</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Blog Posts -->
+        <section class="blog-preview">
+            <div class="container">
+                <h2 class="section-title" data-pt="Últimos Artigos do Blog" data-en="Latest Blog Articles">Últimos Artigos do Blog</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <img src="assets/images/blog-scrum-intro.jpg" alt="O que é Scrum" class="blog-image">
+                        <div class="blog-content">
+                            <h3><a href="blog/o-que-e-scrum.html" data-pt="O que é Scrum e como funciona?" data-en="What is Scrum and how does it work?">O que é Scrum e como funciona?</a></h3>
+                            <p data-pt="Entenda os fundamentos da metodologia ágil mais popular do mundo" data-en="Understand the fundamentals of the world's most popular agile methodology">
+                                Entenda os fundamentos da metodologia ágil mais popular do mundo
+                            </p>
+                            <time datetime="2025-01-15">15 de Janeiro, 2025</time>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="assets/images/blog-tasktracker.jpg" alt="TaskTracker" class="blog-image">
+                        <div class="blog-content">
+                            <h3><a href="blog/tasktracker-ferramenta-scrum.html" data-pt="TaskTracker: Uma ferramenta poderosa para equipes Scrum" data-en="TaskTracker: A powerful tool for Scrum teams">TaskTracker: Uma ferramenta poderosa para equipes Scrum</a></h3>
+                            <p data-pt="Descubra como a TaskTracker pode revolucionar a gestão dos seus projetos" data-en="Discover how TaskTracker can revolutionize your project management">
+                                Descubra como a TaskTracker pode revolucionar a gestão dos seus projetos
+                            </p>
+                            <time datetime="2025-01-12">12 de Janeiro, 2025</time>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="assets/images/blog-ia-projetos.jpg" alt="IA na Gestão de Projetos" class="blog-image">
+                        <div class="blog-content">
+                            <h3><a href="blog/ia-machine-learning-gestao-projetos.html" data-pt="IA e machine learning na gestão de projetos" data-en="AI and machine learning in project management">IA e machine learning na gestão de projetos</a></h3>
+                            <p data-pt="Como a inteligência artificial está transformando a forma de gerenciar projetos" data-en="How artificial intelligence is transforming project management">
+                                Como a inteligência artificial está transformando a forma de gerenciar projetos
+                            </p>
+                            <time datetime="2025-01-10">10 de Janeiro, 2025</time>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog-cta">
+                    <a href="pages/blog.html" class="btn btn-outline" data-pt="Ver todos os artigos" data-en="View all articles">Ver todos os artigos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 data-pt="Mantenha-se Atualizado" data-en="Stay Updated">Mantenha-se Atualizado</h2>
+                    <p data-pt="Receba as últimas novidades sobre Scrum, IA e Big Data diretamente no seu e-mail" data-en="Get the latest news about Scrum, AI and Big Data directly in your email">
+                        Receba as últimas novidades sobre Scrum, IA e Big Data diretamente no seu e-mail
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" data-pt-placeholder="Seu e-mail" data-en-placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary" data-pt="Inscrever-se" data-en="Subscribe">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p data-pt="Portal dedicado à metodologia Scrum, TaskTracker e inovações em IA e Big Data." data-en="Portal dedicated to Scrum methodology, TaskTracker and innovations in AI and Big Data.">
+                        Portal dedicado à metodologia Scrum, TaskTracker e inovações em IA e Big Data.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Guias Scrum" data-en="Scrum Guides">Guias Scrum</h3>
+                    <ul>
+                        <li><a href="pages/sobre-scrum.html" data-pt="Sobre Scrum" data-en="About Scrum">Sobre Scrum</a></li>
+                        <li><a href="pages/sprint-management.html" data-pt="Sprint Management" data-en="Sprint Management">Sprint Management</a></li>
+                        <li><a href="pages/sprint-planning-guide.html" data-pt="Sprint Planning" data-en="Sprint Planning">Sprint Planning</a></li>
+                        <li><a href="pages/scrum-ceremonies.html" data-pt="Cerimônias Scrum" data-en="Scrum Ceremonies">Cerimônias Scrum</a></li>
+                        <li><a href="pages/product-backlog-management.html" data-pt="Product Backlog" data-en="Product Backlog">Product Backlog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Links Rápidos" data-en="Quick Links">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="pages/tasktracker.html">TaskTracker</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/contato.html" data-pt="Contato" data-en="Contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Parceiros" data-en="Partners">Parceiros</h3>
+                    <ul>
+                        <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                        <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-pt="Conecte-se" data-en="Connect">Conecte-se</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

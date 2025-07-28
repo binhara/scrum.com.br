@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal Scrum: O maior portal de conteúdo sobre metodologia ágil no Brasil. Guias práticos, ferramentas e cases de sucesso.">
+    <meta name="keywords" content="Scrum, metodologias ágeis, gestão de projetos, Sprint Planning, Product Backlog, Scrum Ceremonies">
+    <title>Scrum.com.br - Portal da Metodologia Ágil</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/modern-styles.css">
+    <link rel="stylesheet" href="assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/">
+    <meta property="og:title" content="Scrum.com.br - Portal da Metodologia Ágil">
+    <meta property="og:description" content="Portal Scrum: O maior portal de conteúdo sobre metodologia ágil no Brasil. Guias práticos, ferramentas e cases de sucesso.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.scrum.com.br/">
+</head>
+<body>
+    <!-- Header Simplificado -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                    <span class="logo-text">Scrum.com.br</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link active">Início</a></li>
+                        <li><a href="pages/sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="pages/tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="pages/contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Portal Section -->
+        <section class="hero-portal">
+            <div class="container">
+                <div class="hero-portal-layout">
+                    
+                    <!-- Card de Guias à Esquerda -->
+                    <div class="guides-card-main">
+                        <div class="guides-card-header">
+                            <h3>🎯 Guias Completos</h3>
+                            <span class="guides-count">4 Guias Essenciais</span>
+                        </div>
+                        <div class="guides-list">
+                            <a href="pages/sprint-management.html" class="guide-item">
+                                <div class="guide-icon">🚀</div>
+                                <div class="guide-info">
+                                    <strong>Sprint Management</strong>
+                                    <span>Métricas e otimização</span>
+                                </div>
+                                <div class="guide-level expert">Expert</div>
+                            </a>
+                            <a href="pages/sprint-planning-guide.html" class="guide-item">
+                                <div class="guide-icon">📋</div>
+                                <div class="guide-info">
+                                    <strong>Sprint Planning</strong>
+                                    <span>Planejamento eficiente</span>
+                                </div>
+                                <div class="guide-level intermediate">Intermediário</div>
+                            </a>
+                            <a href="pages/scrum-ceremonies.html" class="guide-item">
+                                <div class="guide-icon">🎭</div>
+                                <div class="guide-info">
+                                    <strong>Cerimônias Scrum</strong>
+                                    <span>4 eventos essenciais</span>
+                                </div>
+                                <div class="guide-level intermediate">Intermediário</div>
+                            </a>
+                            <a href="pages/product-backlog-management.html" class="guide-item">
+                                <div class="guide-icon">📊</div>
+                                <div class="guide-info">
+                                    <strong>Product Backlog</strong>
+                                    <span>Priorização avançada</span>
+                                </div>
+                                <div class="guide-level advanced">Avançado</div>
+                            </a>
+                        </div>
+                        <div class="guides-card-footer">
+                            <a href="pages/sobre-scrum.html" class="btn-guides-all">Ver Todos os Guias →</a>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo Principal do Hero -->
+                    <div class="hero-main-content">
+                        <div class="hero-badge">
+                            <span>🚀 Mais de 50 mil profissionais transformados</span>
+                        </div>
+                        <h1 class="hero-title-portal">
+                            Domine a <span class="highlight-gradient">Metodologia Scrum</span>
+                        </h1>
+                        <p class="hero-subtitle-portal">
+                            O maior portal de conteúdo sobre Scrum no Brasil. <strong>Guias práticos, ferramentas profissionais e cases reais</strong> para transformar sua equipe com metodologias ágeis de sucesso.
+                        </p>
+                        
+                        <!-- Estatísticas Visuais -->
+                        <div class="stats-visual">
+                            <div class="stat-visual-item primary">
+                                <div class="stat-icon">📈</div>
+                                <div class="stat-content">
+                                    <div class="stat-number">70%</div>
+                                    <div class="stat-label">das equipes ágeis<br>usam Scrum</div>
+                                </div>
+                            </div>
+                            <div class="stat-visual-item success">
+                                <div class="stat-icon">🌍</div>
+                                <div class="stat-content">
+                                    <div class="stat-number">12M+</div>
+                                    <div class="stat-label">pessoas usam Scrum<br>mundialmente</div>
+                                </div>
+                            </div>
+                            <div class="stat-visual-item warning">
+                                <div class="stat-icon">🚀</div>
+                                <div class="stat-content">
+                                    <div class="stat-number">250%</div>
+                                    <div class="stat-label">aumento de<br>produtividade</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons-portal">
+                            <a href="pages/sobre-scrum.html" class="btn btn-primary-large">
+                                <span>Começar Gratuitamente</span>
+                                <small>Acesso completo aos guias</small>
+                            </a>
+                            <a href="#conteudo-portal" class="btn btn-ghost">Explorar Conteúdo</a>
+                        </div>
+                        
+                        <!-- Social Proof -->
+                        <div class="social-proof-portal">
+                            <div class="proof-label">Confiado por profissionais de:</div>
+                            <div class="companies-logos">
+                                <span class="company-logo">Nubank</span>
+                                <span class="company-logo">iFood</span>
+                                <span class="company-logo">Stone</span>
+                                <span class="company-logo">Mercado Livre</span>
+                                <span class="company-logo">+100 empresas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Conteúdo Principal -->
+        <section class="content-portal" id="conteudo-portal">
+            <div class="container">
+                
+                <!-- Conteúdo em Destaque -->
+                <div class="featured-content-section">
+                    <div class="section-header-portal">
+                        <h2>🌟 Conteúdo em Destaque</h2>
+                        <p>Os recursos mais acessados pelos profissionais Scrum</p>
+                    </div>
+                    
+                    <div class="featured-content-grid">
+                        <!-- Guia Fundamental -->
+                        <div class="featured-card primary">
+                            <div class="featured-card-badge">Mais Popular</div>
+                            <div class="featured-card-content">
+                                <h3><a href="pages/sobre-scrum.html">Guia Fundamental do Scrum</a></h3>
+                                <p>Começe sua jornada Scrum aqui. História, princípios, papéis e benefícios da metodologia ágil mais usada no mundo.</p>
+                                <div class="card-features">
+                                    <span class="feature-tag">🌱 Iniciante</span>
+                                    <span class="feature-tag">⏱️ 25 min</span>
+                                    <span class="feature-tag">📚 Completo</span>
+                                </div>
+                                <a href="pages/sobre-scrum.html" class="btn btn-primary">Começar Agora</a>
+                            </div>
+                            <div class="featured-card-image">
+                                <img src="assets/images/scrum-framework-diagram.png" alt="Framework Scrum" class="card-image">
+                            </div>
+                        </div>
+
+                        <!-- TaskTracker -->
+                        <div class="featured-card secondary">
+                            <div class="featured-card-badge">Ferramenta</div>
+                            <div class="featured-card-content">
+                                <h3><a href="pages/tasktracker.html">TaskTracker</a></h3>
+                                <p>Kanban board profissional com burndown charts automáticos, gestão de sprints e integração com Google Sheets.</p>
+                                <div class="card-features">
+                                    <span class="feature-tag">🛠️ Ferramenta</span>
+                                    <span class="feature-tag">📊 Analytics</span>
+                                    <span class="feature-tag">💚 Gratuita</span>
+                                </div>
+                                <a href="pages/tasktracker.html" class="btn btn-secondary">Experimente Grátis</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de Conteúdo Modular -->
+                <div class="content-modules-grid">
+                    
+                    <!-- Módulo: Learning Path -->
+                    <div class="content-module learning-path">
+                        <div class="module-header">
+                            <h3>🎯 Trilha de Aprendizado</h3>
+                            <p>Sua jornada do iniciante ao expert</p>
+                        </div>
+                        <div class="learning-steps">
+                            <div class="learning-step" data-step="1">
+                                <div class="step-content">
+                                    <h4>Fundamentos</h4>
+                                    <p>Conceitos básicos e história</p>
+                                    <a href="pages/sobre-scrum.html">Começar →</a>
+                                </div>
+                            </div>
+                            <div class="learning-step" data-step="2">
+                                <div class="step-content">
+                                    <h4>Cerimônias</h4>
+                                    <p>4 eventos essenciais</p>
+                                    <a href="pages/scrum-ceremonies.html">Aprender →</a>
+                                </div>
+                            </div>
+                            <div class="learning-step" data-step="3">
+                                <div class="step-content">
+                                    <h4>Planejamento</h4>
+                                    <p>Estimativas e objetivos</p>
+                                    <a href="pages/sprint-planning-guide.html">Dominar →</a>
+                                </div>
+                            </div>
+                            <div class="learning-step" data-step="4">
+                                <div class="step-content">
+                                    <h4>Gestão Avançada</h4>
+                                    <p>Métricas e otimização</p>
+                                    <a href="pages/sprint-management.html">Expert →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Módulo: Testimonials -->
+                    <div class="content-module testimonials-module">
+                        <div class="module-header">
+                            <h3>💬 Casos de Sucesso</h3>
+                            <p>Profissionais que transformaram suas equipes</p>
+                        </div>
+                        <div class="testimonials-carousel">
+                            <div class="testimonial-slide active">
+                                <div class="testimonial-content">
+                                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                                    <p>"Implementamos Scrum em 2 semanas seguindo os guias. Nossa produtividade aumentou 180% e as entregas ficaram mais previsíveis."</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">MS</div>
+                                    <div class="author-info">
+                                        <strong>Marina Santos</strong>
+                                        <span>Product Owner, Nubank</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Módulo: Quick Tools -->
+                    <div class="content-module tools-module">
+                        <div class="module-header">
+                            <h3>🛠️ Ferramentas Rápidas</h3>
+                            <p>Recursos práticos para o dia a dia</p>
+                        </div>
+                        <div class="quick-tools-list">
+                            <div class="tool-quick-item">
+                                <div class="tool-icon">📊</div>
+                                <div class="tool-info">
+                                    <strong>Calculadora de Velocity</strong>
+                                    <span>Planejamento de sprints</span>
+                                </div>
+                                <span class="tool-status free">Gratuita</span>
+                            </div>
+                            <div class="tool-quick-item">
+                                <div class="tool-icon">📋</div>
+                                <div class="tool-info">
+                                    <strong>Templates de Cerimônias</strong>
+                                    <span>Checklists prontos</span>
+                                </div>
+                                <span class="tool-status free">Gratuita</span>
+                            </div>
+                            <div class="tool-quick-item">
+                                <div class="tool-icon">🎯</div>
+                                <div class="tool-info">
+                                    <strong>Matriz de Priorização</strong>
+                                    <span>MoSCoW e Impact/Effort</span>
+                                </div>
+                                <span class="tool-status premium">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-portal">
+            <div class="container">
+                <div class="partners-header">
+                    <h2>🤝 Nossos Parceiros</h2>
+                    <p>Expandindo conhecimento em IA e Big Data</p>
+                </div>
+                <div class="partners-grid-portal">
+                    <div class="partner-card-portal">
+                        <a href="https://www.oworkshop.com.br" target="_blank" rel="noopener">
+                            <div class="partner-content">
+                                <img src="assets/images/oworkshop_logo.svg" alt="Logo OWorkshop" class="partner-logo">
+                                <h3>OWorkshop</h3>
+                                <p>Cursos de Inteligência Artificial com especialistas renomados</p>
+                                <span class="partner-tag">Educação IA</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-card-portal">
+                        <a href="https://www.dssbr.com.br" target="_blank" rel="noopener">
+                            <div class="partner-content">
+                                <img src="assets/images/dssbr_logo.svg" alt="Logo DSSBR" class="partner-logo">
+                                <h3>Data Science Summit Brasil</h3>
+                                <p>O maior congresso de Big Data e Ciência de Dados do Brasil</p>
+                                <span class="partner-tag">Evento Tech</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-portal">
+            <div class="container">
+                <div class="newsletter-content-portal">
+                    <div class="newsletter-info">
+                        <h2>📬 Fique Atualizado</h2>
+                        <p>Receba novos guias Scrum, templates e novidades sobre metodologias ágeis diretamente no seu e-mail.</p>
+                        <div class="newsletter-benefits">
+                            <div class="benefit-item">✓ Guias exclusivos semanais</div>
+                            <div class="benefit-item">✓ Templates e checklists gratuitos</div>
+                            <div class="benefit-item">✓ Cases de sucesso reais</div>
+                        </div>
+                    </div>
+                    <form class="newsletter-form-portal">
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu e-mail profissional" required>
+                            <button type="submit" class="btn btn-primary">Inscrever-se Grátis</button>
+                        </div>
+                        <small class="form-note">Sem spam. Cancele quando quiser.</small>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>O maior portal de conteúdo sobre metodologia Scrum no Brasil, com guias detalhados e melhores práticas para transformar equipes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="pages/sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="pages/sprint-management.html">Sprint Management</a></li>
+                            <li><a href="pages/sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="pages/scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="pages/product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="pages/tasktracker.html">TaskTracker</a></li>
+                            <li><a href="pages/blog.html">Blog</a></li>
+                            <li><a href="pages/contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

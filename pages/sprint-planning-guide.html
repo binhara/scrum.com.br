@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo de Sprint Planning: aprenda como planejar sprints efetivamente, definir objetivos, estimar trabalho e criar planos de sucesso.">
+    <meta name="keywords" content="Sprint Planning, planejamento de sprint, Scrum planning, sprint goal, sprint backlog, estimativas ágeis">
+    <title>Sprint Planning Guide - Guia Completo | Scrum.com.br</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/pages/sprint-planning-guide.html">
+    <meta property="og:title" content="Sprint Planning Guide - Guia Completo">
+    <meta property="og:description" content="Guia completo de Sprint Planning: aprenda como planejar sprints efetivamente, definir objetivos, estimar trabalho e criar planos de sucesso.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.scrum.com.br/pages/sprint-planning-guide.html">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da Página -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Início</a> 
+                        <span>></span>
+                        <span>Sprint Planning Guide</span>
+                    </div>
+                    <h1 class="page-title">Sprint Planning Guide</h1>
+                    <p class="page-subtitle">
+                        Guia completo para planejar sprints efetivos e atingir objetivos ambiciosos
+                    </p>
+                    <div class="page-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">📋</div>
+                            <span>Intermediário</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">⏱️</div>
+                            <span>12 min leitura</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">🎯</div>
+                            <span>Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <section class="page-content">
+            <div class="container">
+                <div class="content-layout">
+                    
+                    <!-- Sidebar de Navegação -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-sticky">
+                            <h3>📖 Neste Guia</h3>
+                            <nav class="content-nav">
+                                <a href="#introducao" class="nav-item">O que é Sprint Planning</a>
+                                <a href="#objetivos" class="nav-item">Objetivos Principais</a>
+                                <a href="#participantes" class="nav-item">Participantes e Responsabilidades</a>
+                                <a href="#processo" class="nav-item">Processo de Planejamento</a>
+                                <a href="#tecnicas" class="nav-item">Técnicas de Estimativa</a>
+                                <a href="#praticas" class="nav-item">Melhores Práticas</a>
+                                <a href="#armadilhas" class="nav-item">Armadilhas Comuns</a>
+                                <a href="#conclusoes" class="nav-item">Principais Conclusões</a>
+                            </nav>
+                            
+                            <!-- Guias Relacionados -->
+                            <div class="related-guides">
+                                <h4>🎯 Próximos Passos</h4>
+                                <div class="related-list">
+                                    <a href="sprint-management.html" class="related-item">
+                                        <div class="related-icon">🚀</div>
+                                        <div class="related-info">
+                                            <strong>Sprint Management</strong>
+                                            <span>Gestão efetiva de sprints</span>
+                                        </div>
+                                    </a>
+                                    <a href="scrum-ceremonies.html" class="related-item">
+                                        <div class="related-icon">🎭</div>
+                                        <div class="related-info">
+                                            <strong>Cerimônias Scrum</strong>
+                                            <span>Todas as cerimônias</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Conteúdo do Artigo -->
+                    <article class="main-content">
+                        
+                        <!-- Introdução -->
+                        <div class="content-section">
+                            <h2 id="introducao">📋 O que é Sprint Planning?</h2>
+                            <div class="highlight-box">
+                                <p><strong>Sprint Planning</strong> é um evento time-boxed que inicia o sprint, identificando tarefas e como o trabalho será realizado. É uma reunião colaborativa onde a equipe de desenvolvimento, Scrum Master e Product Owner trabalham juntos para criar um plano claro para o sprint.</p>
+                            </div>
+                            
+                            <p>O Sprint Planning foca em criar um plano "apenas suficiente", priorizando o planejamento orientado a objetivos e mantendo o backlog flexível, aceitando a natureza empírica do Scrum.</p>
+                        </div>
+
+                        <div class="content-section">
+                            <div class="info-box">
+                                <h3>Informações Essenciais</h3>
+                                <ul>
+                                    <li>Duração: Máximo 2h por semana de sprint</li>
+                                    <li>Participantes: Time dev, SM, PO</li>
+                                    <li>Saída: Sprint goal + Sprint backlog + Plano</li>
+                                    <li>Frequência: Todo início de sprint</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Objetivos Principais -->
+                        <div class="content-section">
+                            <h2 id="objetivos">🎯 Objetivos Principais</h2>
+                            <div class="objectives-grid">
+                                <div class="objective-card">
+                                    <div class="objective-icon">🎯</div>
+                                    <h3>Definir Sprint Goal</h3>
+                                    <p>O Product Owner define o objetivo da sprint que servirá como o norte para todas as decisões durante o sprint, motivando a equipe em direção a um resultado claro.</p>
+                                </div>
+                                <div class="objective-card">
+                                    <div class="objective-icon">📝</div>
+                                    <h3>Criar Sprint Backlog</h3>
+                                    <p>A equipe de desenvolvimento seleciona itens do Product Backlog e determina como transformá-los em um incremento funcional, criando o Sprint Backlog.</p>
+                                </div>
+                                <div class="objective-card">
+                                    <div class="objective-icon">🗺️</div>
+                                    <h3>Elaborar Plano de Ação</h3>
+                                    <p>Desenvolver uma estratégia inicial de como o trabalho será executado, incluindo dependências, riscos e a definição de "pronto" para cada item.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Participantes & Responsabilidades -->
+                        <div class="content-section">
+                            <h2 id="participantes">👥 Participantes e Responsabilidades</h2>
+                            <div class="participants-grid">
+                                <div class="participant-card">
+                                    <div class="participant-icon">👑</div>
+                                    <h3>Product Owner</h3>
+                                    <div class="participant-responsibilities">
+                                        <h4>Responsabilidades:</h4>
+                                        <ul>
+                                            <li>Define o sprint goal e objetivos</li>
+                                            <li>Prioriza e esclarece itens do backlog</li>
+                                            <li>Responde perguntas sobre requisitos</li>
+                                            <li>Valida a compreensão da equipe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="participant-card">
+                                    <div class="participant-icon">👥</div>
+                                    <h3>Equipe de Desenvolvimento</h3>
+                                    <div class="participant-responsibilities">
+                                        <h4>Responsabilidades:</h4>
+                                        <ul>
+                                            <li>Estima esforço e complexidade</li>
+                                            <li>Seleciona itens baseado na capacidade</li>
+                                            <li>Define como o trabalho será feito</li>
+                                            <li>Identifica dependências e riscos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="participant-card">
+                                    <div class="participant-icon">🎯</div>
+                                    <h3>Scrum Master</h3>
+                                    <div class="participant-responsibilities">
+                                        <h4>Responsabilidades:</h4>
+                                        <ul>
+                                            <li>Facilita a reunião e mantém foco</li>
+                                            <li>Garante time-boxing adequado</li>
+                                            <li>Remove impedimentos identificados</li>
+                                            <li>Apoia a autoorganização da equipe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Processo de Planejamento -->
+                        <div class="content-section">
+                            <h2 id="processo">📋 Processo de Planejamento</h2>
+                            <div class="process-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-step">1</div>
+                                    <div class="timeline-content">
+                                        <h3>Preparação (Pré-meeting)</h3>
+                                        <ul>
+                                            <li>Product Owner refina o backlog</li>
+                                            <li>Itens estão prontos e priorizados</li>
+                                            <li>Critérios de aceitação definidos</li>
+                                            <li>Equipe revisou itens candidatos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-step">2</div>
+                                    <div class="timeline-content">
+                                        <h3>Definição do Sprint Goal</h3>
+                                        <ul>
+                                            <li>PO apresenta visão e objetivo</li>
+                                            <li>Equipe discute e alinha entendimento</li>
+                                            <li>Sprint Goal é estabelecido e validado</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-step">3</div>
+                                    <div class="timeline-content">
+                                        <h3>Seleção e Estimativa</h3>
+                                        <ul>
+                                            <li>Equipe estima esforço com story points</li>
+                                            <li>Considera velocidade histórica</li>
+                                            <li>Seleciona itens que cabem no sprint</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-step">4</div>
+                                    <div class="timeline-content">
+                                        <h3>Criação do Plano</h3>
+                                        <ul>
+                                            <li>Quebra itens em tarefas menores</li>
+                                            <li>Identifica dependências críticas</li>
+                                            <li>Define estratégia de execução</li>
+                                            <li>Sprint Backlog é finalizado</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Técnicas de Estimativa -->
+                        <div class="content-section">
+                            <h2 id="tecnicas">🔢 Técnicas de Estimativa</h2>
+                            <div class="techniques-grid">
+                                <div class="technique-card">
+                                    <h3>Story Points</h3>
+                                    <p>Unidade de medida relativa que considera complexidade, esforço e incerteza. Usa sequência Fibonacci (1,2,3,5,8,13,21) para refletir incerteza crescente.</p>
+                                    <div class="technique-pros">
+                                        <h4>Vantagens:</h4>
+                                        <ul>
+                                            <li>Foco na complexidade relativa</li>
+                                            <li>Evita discussões sobre tempo</li>
+                                            <li>Melhora com o tempo</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="technique-card">
+                                    <h3>Planning Poker</h3>
+                                    <p>Técnica colaborativa onde cada membro da equipe revela simultaneamente sua estimativa usando cartas numeradas, promovendo discussão e consenso.</p>
+                                    <div class="technique-pros">
+                                        <h4>Vantagens:</h4>
+                                        <ul>
+                                            <li>Previne ancoragem de estimativas</li>
+                                            <li>Encoraja participação de todos</li>
+                                            <li>Gera discussões produtivas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="technique-card">
+                                    <h3>T-Shirt Sizes</h3>
+                                    <p>Estimativa usando tamanhos de camiseta (XS, S, M, L, XL, XXL) para classificar itens rapidamente sem precisão numérica, ideal para estimativas iniciais.</p>
+                                    <div class="technique-pros">
+                                        <h4>Vantagens:</h4>
+                                        <ul>
+                                            <li>Rápido e intuitivo</li>
+                                            <li>Boa para estimativas de alto nível</li>
+                                            <li>Fácil compreensão para stakeholders</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Melhores Práticas -->
+                        <div class="content-section">
+                            <h2 id="praticas">✅ Melhores Práticas</h2>
+                            <div class="best-practices-grid">
+                                <div class="practice-section">
+                                    <h3>Preparação Efetiva</h3>
+                                    <div class="practice-items">
+                                        <div class="practice-item">
+                                            <span class="practice-icon">✅</span>
+                                            <div class="practice-content">
+                                                <h4>Backlog Refinado</h4>
+                                                <p>Garanta que os itens do topo do backlog estejam bem definidos, com critérios de aceitação claros e prontos para desenvolvimento.</p>
+                                            </div>
+                                        </div>
+                                        <div class="practice-item">
+                                            <span class="practice-icon">✅</span>
+                                            <div class="practice-content">
+                                                <h4>Dados de Velocidade</h4>
+                                                <p>Use dados históricos de velocidade da equipe para orientar quantos story points podem ser incluídos no sprint.</p>
+                                            </div>
+                                        </div>
+                                        <div class="practice-item">
+                                            <span class="practice-icon">✅</span>
+                                            <div class="practice-content">
+                                                <h4>Ambiente de Confiança</h4>
+                                                <p>Mantenha um ambiente baseado em confiança para estimativas honestas, sem pressão por compromissos irrealistas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Armadilhas Comuns -->
+                        <div class="content-section">
+                            <h2 id="armadilhas">⚠️ Armadilhas Comuns e Como Evitá-las</h2>
+                            <div class="pitfalls-grid">
+                                <div class="pitfall-card">
+                                    <div class="pitfall-icon">⚠️</div>
+                                    <h3>Planning Muito Detalhado</h3>
+                                    <div class="pitfall-problem">
+                                        <h4>Problema:</h4>
+                                        <p>Gastar tempo excessivo detalhando cada tarefa, perdendo o foco no objetivo geral do sprint.</p>
+                                    </div>
+                                    <div class="pitfall-solution">
+                                        <h4>Solução:</h4>
+                                        <p>Planejar "apenas o suficiente", deixando detalhamentos para o desenvolvimento diário.</p>
+                                    </div>
+                                </div>
+                                <div class="pitfall-card">
+                                    <div class="pitfall-icon">🎯</div>
+                                    <h3>Sprint Goal Vago</h3>
+                                    <div class="pitfall-problem">
+                                        <h4>Problema:</h4>
+                                        <p>Objetivos muito genéricos que não orientam decisões durante o sprint nem motivam a equipe.</p>
+                                    </div>
+                                    <div class="pitfall-solution">
+                                        <h4>Solução:</h4>
+                                        <p>Criar objetivos específicos, mensuráveis e orientados a valor para o cliente.</p>
+                                    </div>
+                                </div>
+                                <div class="pitfall-card">
+                                    <div class="pitfall-icon">📊</div>
+                                    <h3>Estimativas por Tempo</h3>
+                                    <div class="pitfall-problem">
+                                        <h4>Problema:</h4>
+                                        <p>Estimar em horas gera discussões improdutivas e pressão desnecessária sobre a equipe.</p>
+                                    </div>
+                                    <div class="pitfall-solution">
+                                        <h4>Solução:</h4>
+                                        <p>Usar story points ou tamanhos relativos, focando em complexidade e valor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Principais Conclusões -->
+                        <div class="content-section">
+                            <h2 id="conclusoes">💡 Principais Conclusões</h2>
+                            <div class="takeaways-grid">
+                                <div class="takeaway-item">
+                                    <div class="takeaway-icon">💡</div>
+                                    <h3>Planejamento Motivacional</h3>
+                                    <p>"Um bom plano de sprint motiva todos definindo um resultado e um caminho claro para o sucesso." - Foque nos resultados e comece a executar.</p>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-icon">🚀</div>
+                                    <h3>Simplicidade Efetiva</h3>
+                                    <p>Não precisa ser complicado, mesmo que o problema seja complexo. Mantenha o planejamento simples e focado no valor.</p>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-icon">🔄</div>
+                                    <h3>Melhoria Contínua</h3>
+                                    <p>Use retrospectivas para melhorar constantemente o processo de Sprint Planning, adaptando às necessidades específicas da sua equipe.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="content-cta">
+                            <div class="cta-content">
+                                <h2>🚀 Pronto para melhorar seu Sprint Planning?</h2>
+                                <p>Descubra como a TaskTracker pode facilitar seu Sprint Planning com templates, estimativas integradas e acompanhamento visual do progresso!</p>
+                                <div class="cta-buttons">
+                                    <a href="tasktracker.html" class="btn btn-primary">
+                                        Experimente a TaskTracker
+                                    </a>
+                                    <a href="scrum-ceremonies.html" class="btn btn-secondary">
+                                        Cerimônias Scrum
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>O maior portal de conteúdo sobre metodologia Scrum no Brasil, com guias detalhados e melhores práticas para transformar equipes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="sprint-management.html">Sprint Management</a></li>
+                            <li><a href="sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="tasktracker.html">TaskTracker</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

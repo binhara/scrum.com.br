@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda tudo sobre Scrum: história, princípios, papéis, cerimônias e benefícios da metodologia ágil mais popular do mundo.">
+    <meta name="keywords" content="Scrum, metodologia ágil, Product Owner, Scrum Master, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective">
+    <title>Sobre Scrum - Metodologia Ágil | Scrum.com.br</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/pages/sobre-scrum.html">
+    <meta property="og:title" content="Sobre Scrum - Metodologia Ágil">
+    <meta property="og:description" content="Aprenda tudo sobre Scrum: história, princípios, papéis, cerimônias e benefícios da metodologia ágil mais popular do mundo.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.scrum.com.br/pages/sobre-scrum.html">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-scrum.html" class="nav-link active">Sobre Scrum</a></li>
+                        <li><a href="tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da Página -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Início</a> 
+                        <span>></span>
+                        <span>Sobre Scrum</span>
+                    </div>
+                    <h1 class="page-title">Guia Completo do Scrum</h1>
+                    <p class="page-subtitle">
+                        Aprenda história, princípios fundamentais, papéis, cerimônias e benefícios da metodologia ágil mais popular do mundo
+                    </p>
+                    <div class="page-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">📚</div>
+                            <span>Guia Fundamental</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">⏱️</div>
+                            <span>25 min leitura</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">🌱</div>
+                            <span>Nível: Iniciante</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <section class="page-content">
+            <div class="container">
+                <div class="content-layout">
+                    
+                    <!-- Sidebar de Navegação -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-sticky">
+                            <h3>📖 Neste Guia</h3>
+                            <nav class="content-nav">
+                                <a href="#historia" class="nav-item">História do Scrum</a>
+                                <a href="#principios" class="nav-item">Princípios Fundamentais</a>
+                                <a href="#papeis" class="nav-item">Papéis no Scrum</a>
+                                <a href="#cerimônias" class="nav-item">Cerimônias</a>
+                                <a href="#artefatos" class="nav-item">Artefatos</a>
+                                <a href="#beneficios" class="nav-item">Benefícios</a>
+                            </nav>
+                            
+                            <!-- Guias Relacionados -->
+                            <div class="related-guides">
+                                <h4>🎯 Próximos Passos</h4>
+                                <div class="related-list">
+                                    <a href="scrum-ceremonies.html" class="related-item">
+                                        <div class="related-icon">🎭</div>
+                                        <div class="related-info">
+                                            <strong>Cerimônias Scrum</strong>
+                                            <span>Planning, Daily, Review, Retro</span>
+                                        </div>
+                                    </a>
+                                    <a href="sprint-planning-guide.html" class="related-item">
+                                        <div class="related-icon">📋</div>
+                                        <div class="related-info">
+                                            <strong>Sprint Planning</strong>
+                                            <span>Planejamento eficiente</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Conteúdo do Artigo -->
+                    <article class="main-content">
+                        
+                        <!-- Introdução -->
+                        <div class="content-section">
+                            <h2 id="historia">🚀 O que é Scrum?</h2>
+                            <div class="highlight-box">
+                                <p><strong>Scrum</strong> é um framework ágil para gestão e planejamento de projetos que permite às equipes entregar produtos de alta qualidade de forma rápida e eficiente através de ciclos iterativos e incrementais.</p>
+                            </div>
+                            
+                            <p>Desenvolvido inicialmente por Jeff Sutherland e Ken Schwaber no início dos anos 90, o Scrum revolucionou a forma como equipes de desenvolvimento de software trabalham, e hoje é amplamente utilizado em diversas indústrias.</p>
+                        </div>
+
+                        <!-- Pilares do Scrum -->
+                        <div class="content-section">
+                            <h2 id="principios">🏛️ Os 3 Pilares do Scrum</h2>
+                            <div class="pillars-grid">
+                                <div class="pillar-card transparency">
+                                    <div class="pillar-icon">🔍</div>
+                                    <h3>Transparência</h3>
+                                    <p>Aspectos significativos do processo devem ser visíveis para todos os responsáveis pelo resultado. Transparência requer que esses aspectos sejam definidos por um padrão comum.</p>
+                                </div>
+                                <div class="pillar-card inspection">
+                                    <div class="pillar-icon">📊</div>
+                                    <h3>Inspeção</h3>
+                                    <p>Os artefatos e progresso devem ser inspecionados frequentemente para detectar variações indesejáveis. A inspeção é mais benéfica quando realizada de forma diligente por inspetores qualificados.</p>
+                                </div>
+                                <div class="pillar-card adaptation">
+                                    <div class="pillar-icon">🔄</div>
+                                    <h3>Adaptação</h3>
+                                    <p>Se algum aspecto do processo estiver fora dos limites aceitáveis, o processo ou material deve ser ajustado. O ajuste deve ser feito o mais rápido possível.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Papéis no Scrum -->
+                        <div class="content-section">
+                            <h2 id="papeis">👥 Papéis no Scrum</h2>
+                            <div class="roles-grid">
+                                <div class="role-card product-owner">
+                                    <div class="role-header">
+                                        <div class="role-icon">👑</div>
+                                        <h3>Product Owner</h3>
+                                    </div>
+                                    <div class="role-content">
+                                        <p><strong>Responsável pelo produto:</strong> Define o que será construído e prioriza as funcionalidades com base no valor de negócio.</p>
+                                        <div class="responsibilities">
+                                            <h4>Principais Responsabilidades:</h4>
+                                            <ul>
+                                                <li>Gerenciar o Product Backlog</li>
+                                                <li>Definir critérios de aceitação</li>
+                                                <li>Priorizar funcionalidades</li>
+                                                <li>Representar os stakeholders</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="role-card scrum-master">
+                                    <div class="role-header">
+                                        <div class="role-icon">🧭</div>
+                                        <h3>Scrum Master</h3>
+                                    </div>
+                                    <div class="role-content">
+                                        <p><strong>Facilitador do processo:</strong> Garante que o framework Scrum seja seguido e remove impedimentos da equipe.</p>
+                                        <div class="responsibilities">
+                                            <h4>Principais Responsabilidades:</h4>
+                                            <ul>
+                                                <li>Facilitar cerimônias Scrum</li>
+                                                <li>Remover impedimentos</li>
+                                                <li>Coaching da equipe</li>
+                                                <li>Proteger a equipe de interferências</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="role-card dev-team">
+                                    <div class="role-header">
+                                        <div class="role-icon">👨‍💻</div>
+                                        <h3>Development Team</h3>
+                                    </div>
+                                    <div class="role-content">
+                                        <p><strong>Equipe de desenvolvimento:</strong> Profissionais que fazem o trabalho de entregar um incremento potencialmente funcional do produto.</p>
+                                        <div class="responsibilities">
+                                            <h4>Características:</h4>
+                                            <ul>
+                                                <li>Auto-organizável</li>
+                                                <li>Multifuncional</li>
+                                                <li>3-9 membros idealmente</li>
+                                                <li>Responsabilidade compartilhada</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cerimônias -->
+                        <div class="content-section">
+                            <h2 id="cerimônias">🎭 Cerimônias do Scrum</h2>
+                            <div class="ceremonies-timeline">
+                                <div class="ceremony-item">
+                                    <div class="ceremony-marker">1</div>
+                                    <div class="ceremony-content">
+                                        <h3>Sprint Planning</h3>
+                                        <p>Cerimônia que inicia o Sprint. A equipe planeja o trabalho a ser realizado durante o Sprint.</p>
+                                        <div class="ceremony-details">
+                                            <span class="duration">⏱️ 8h para Sprint de 1 mês</span>
+                                            <span class="participants">👥 Toda a equipe Scrum</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="ceremony-item">
+                                    <div class="ceremony-marker">2</div>
+                                    <div class="ceremony-content">
+                                        <h3>Daily Scrum</h3>
+                                        <p>Reunião diária de 15 minutos para sincronização da equipe e planejamento das próximas 24 horas.</p>
+                                        <div class="ceremony-details">
+                                            <span class="duration">⏱️ 15 minutos</span>
+                                            <span class="participants">👥 Development Team</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="ceremony-item">
+                                    <div class="ceremony-marker">3</div>
+                                    <div class="ceremony-content">
+                                        <h3>Sprint Review</h3>
+                                        <p>Demonstração do trabalho concluído durante o Sprint para stakeholders e coleta de feedback.</p>
+                                        <div class="ceremony-details">
+                                            <span class="duration">⏱️ 4h para Sprint de 1 mês</span>
+                                            <span class="participants">👥 Equipe + Stakeholders</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="ceremony-item">
+                                    <div class="ceremony-marker">4</div>
+                                    <div class="ceremony-content">
+                                        <h3>Sprint Retrospective</h3>
+                                        <p>Reflexão sobre o processo e identificação de melhorias para o próximo Sprint.</p>
+                                        <div class="ceremony-details">
+                                            <span class="duration">⏱️ 3h para Sprint de 1 mês</span>
+                                            <span class="participants">👥 Toda a equipe Scrum</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Artefatos -->
+                        <div class="content-section">
+                            <h2 id="artefatos">📋 Artefatos do Scrum</h2>
+                            <div class="artifacts-grid">
+                                <div class="artifact-card">
+                                    <div class="artifact-icon">📝</div>
+                                    <h3>Product Backlog</h3>
+                                    <p>Lista ordenada e priorizada de funcionalidades, requisitos, melhorias e correções que constituem as mudanças a serem feitas no produto.</p>
+                                    <div class="artifact-owner">Proprietário: <strong>Product Owner</strong></div>
+                                </div>
+                                
+                                <div class="artifact-card">
+                                    <div class="artifact-icon">📊</div>
+                                    <h3>Sprint Backlog</h3>
+                                    <p>Conjunto de itens do Product Backlog selecionados para o Sprint, mais um plano para entregar o incremento do produto.</p>
+                                    <div class="artifact-owner">Proprietário: <strong>Development Team</strong></div>
+                                </div>
+                                
+                                <div class="artifact-card">
+                                    <div class="artifact-icon">🚀</div>
+                                    <h3>Incremento</h3>
+                                    <p>A soma de todos os itens do Product Backlog completados durante um Sprint e todos os Sprints anteriores.</p>
+                                    <div class="artifact-owner">Resultado: <strong>Produto Potencialmente Funcional</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefícios -->
+                        <div class="content-section">
+                            <h2 id="beneficios">🎯 Benefícios do Scrum</h2>
+                            <div class="benefits-grid">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">⚡</div>
+                                    <h3>Entrega Rápida</h3>
+                                    <p>Entrega de valor em ciclos curtos de 1-4 semanas</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🔄</div>
+                                    <h3>Flexibilidade</h3>
+                                    <p>Capacidade de adaptar-se rapidamente a mudanças</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">👥</div>
+                                    <h3>Colaboração</h3>
+                                    <p>Melhoria na comunicação e trabalho em equipe</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">📈</div>
+                                    <h3>Transparência</h3>
+                                    <p>Visibilidade completa do progresso do projeto</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🎯</div>
+                                    <h3>Foco no Valor</h3>
+                                    <p>Priorização baseada no valor de negócio</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🔍</div>
+                                    <h3>Melhoria Contínua</h3>
+                                    <p>Processo de inspeção e adaptação constante</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="content-cta">
+                            <div class="cta-content">
+                                <h2>🚀 Pronto para Aplicar Scrum?</h2>
+                                <p>Agora que você conhece os fundamentos, é hora de colocar em prática!</p>
+                                <div class="cta-buttons">
+                                    <a href="scrum-ceremonies.html" class="btn btn-primary">
+                                        Aprender Cerimônias
+                                    </a>
+                                    <a href="../index.html#conteudo-portal" class="btn btn-secondary">
+                                        Ver Mais Guias
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>O maior portal de conteúdo sobre metodologia Scrum no Brasil, com guias detalhados e melhores práticas para transformar equipes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="sprint-management.html">Sprint Management</a></li>
+                            <li><a href="sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="tasktracker.html">TaskTracker</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

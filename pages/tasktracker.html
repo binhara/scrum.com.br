@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskTracker: Ferramenta completa para gestão de projetos Scrum com Kanban, burndown, sprints e integração com Google Sheets.">
+    <meta name="keywords" content="TaskTracker, Scrum, Kanban, burndown, gestão de projetos, Google Sheets, task management, sprint, agile">
+    <title>TaskTracker - Ferramenta Scrum Completa | Scrum.com.br</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/pages/tasktracker.html">
+    <meta property="og:title" content="TaskTracker - Ferramenta Scrum Completa">
+    <meta property="og:description" content="TaskTracker: Ferramenta completa para gestão de projetos Scrum com Kanban, burndown, sprints e integração com Google Sheets.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.scrum.com.br/pages/tasktracker.html">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="tasktracker.html" class="nav-link active">TaskTracker</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da Página -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Início</a> 
+                        <span>></span>
+                        <span>TaskTracker</span>
+                    </div>
+                    <h1 class="page-title">TaskTracker</h1>
+                    <p class="page-subtitle">
+                        A ferramenta completa para gestão de projetos Scrum com visualização Kanban, burndown e integração com Google Sheets
+                    </p>
+                    <div class="page-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">🛠️</div>
+                            <span>Ferramenta Completa</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">📊</div>
+                            <span>Kanban + Burndown</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">💾</div>
+                            <span>100% Gratuito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <section class="page-content">
+            <div class="container">
+                <div class="content-layout">
+                    
+                    <!-- Sidebar de Navegação -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-sticky">
+                            <h3>🚀 TaskTracker</h3>
+                            <nav class="content-nav">
+                                <a href="#features" class="nav-item">Funcionalidades</a>
+                                <a href="#kanban-concepts" class="nav-item">Conceitos Kanban</a>
+                                <a href="#sprint-management" class="nav-item">Gestão de Sprints</a>
+                                <a href="#technology" class="nav-item">Tecnologias</a>
+                                <a href="#predictive" class="nav-item">Análise Preditiva</a>
+                                <a href="#wip-system" class="nav-item">Sistema WIP</a>
+                                <a href="#demo" class="nav-item">Experimente</a>
+                            </nav>
+                            
+                            <!-- Links Relacionados -->
+                            <div class="related-guides">
+                                <h4>🔗 Links Úteis</h4>
+                                <div class="related-list">
+                                    <a href="sobre-scrum.html" class="related-item">
+                                        <div class="related-icon">📚</div>
+                                        <div class="related-info">
+                                            <strong>Fundamentos Scrum</strong>
+                                            <span>Base teórica</span>
+                                        </div>
+                                    </a>
+                                    <a href="blog.html" class="related-item">
+                                        <div class="related-icon">📝</div>
+                                        <div class="related-info">
+                                            <strong>Blog</strong>
+                                            <span>Artigos e tutoriais</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Conteúdo do Artigo -->
+                    <article class="main-content">
+                        
+                        <!-- Introdução -->
+                        <div class="content-section">
+                            <h2 id="features">🚀 Principais Funcionalidades</h2>
+                            <div class="highlight-box">
+                                <p><strong>TaskTracker</strong> é uma ferramenta completa para gestão de projetos Scrum que combina Kanban visual, burndown dinâmico e integração com Google Sheets em uma solução 100% gratuita.</p>
+                            </div>
+                            
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">📋</div>
+                                    <h3>Visualização Kanban</h3>
+                                    <p>Colunas personalizáveis (Backlog, Priorizado, Doing, Done) com sistema drag-and-drop intuitivo e filtros avançados para organização eficiente.</p>
+                                    <div class="feature-details">
+                                        <ul>
+                                            <li>Drag-and-drop entre colunas</li>
+                                            <li>Filtros por desenvolvedor e prioridade</li>
+                                            <li>Indicadores visuais de status</li>
+                                            <li>Contadores automáticos por coluna</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <div class="feature-icon">📈</div>
+                                    <h3>Burndown Chart Dinâmico</h3>
+                                    <p>Gráfico avançado com sincronização em tempo real, previsão de conclusão e alertas inteligentes para desvios do planejado.</p>
+                                    <div class="feature-details">
+                                        <ul>
+                                            <li>Sincronização bidirecional Kanban-Burndown</li>
+                                            <li>Linha ideal vs realizada com tendência</li>
+                                            <li>Previsão de data de conclusão</li>
+                                            <li>Alertas de risco automáticos</li>
+                                            <li>Comparação com sprints históricas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <div class="feature-icon">🔄</div>
+                                    <h3>Integração Google Sheets</h3>
+                                    <p>Sincronização bidirecional com Google Sheets, autenticação OAuth2 segura e compartilhamento de planilhas por e-mail.</p>
+                                    <div class="feature-details">
+                                        <ul>
+                                            <li>Sincronização automática bidirecional</li>
+                                            <li>Autenticação OAuth2 do Google</li>
+                                            <li>Compartilhamento por e-mail</li>
+                                            <li>Backup automático na nuvem</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Conceitos Kanban -->
+                        <div class="content-section">
+                            <h2 id="kanban-concepts">🏛️ Conceitos Kanban Fundamentais</h2>
+                            <p>Entenda como a TaskTracker implementa os conceitos essenciais do Kanban para máxima eficiência:</p>
+                            
+                            <div class="kanban-concepts-grid">
+                                <div class="concept-card">
+                                    <div class="concept-icon">🔄</div>
+                                    <h3>Fluxo de Trabalho Visual</h3>
+                                    <p>O quadro Kanban da TaskTracker visualiza todo o fluxo de trabalho com 4 colunas principais: Backlog (ideias), Priorizado (ready), Doing (em progresso) e Done (concluído).</p>
+                                </div>
+                                
+                                <div class="concept-card">
+                                    <div class="concept-icon">⚠️</div>
+                                    <h3>Limites WIP (Work in Progress)</h3>
+                                    <p>Sistema inteligente que monitora e alerta quando há excesso de tarefas em progresso, evitando sobrecarga da equipe e mantendo foco na conclusão.</p>
+                                </div>
+                                
+                                <div class="concept-card">
+                                    <div class="concept-icon">📏</div>
+                                    <h3>Métricas de Lead Time</h3>
+                                    <p>Acompanhamento automático do tempo que cada tarefa leva para percorrer todo o fluxo, desde a criação até a conclusão, fornecendo dados para otimização contínua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gestão de Sprints -->
+                        <div class="content-section">
+                            <h2 id="sprint-management">📈 Gestão Avançada de Sprints</h2>
+                            <p>Sistema completo de sprints de 10 dias com relatórios automáticos, histórico detalhado e métricas de performance da equipe.</p>
+                            
+                            <div class="highlight-box">
+                                <h3>📊 Por que Sprints de 10 Dias?</h3>
+                                <p>Sprints otimizadas de 10 dias permitem feedback rápido e ajustes precisos. Cada dia é crucial para manter o projeto no trilho com máxima agilidade.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tecnologias -->
+                        <div class="content-section">
+                            <h2 id="technology">⚙️ Stack Tecnológico</h2>
+                            <p>TaskTracker é desenvolvida com as tecnologias mais modernas e confiáveis do mercado:</p>
+                            
+                            <div class="tech-categories">
+                                <div class="tech-category">
+                                    <h3>Frontend</h3>
+                                    <div class="tech-stack">
+                                        <div class="tech-item">React 18</div>
+                                        <div class="tech-item">Material-UI</div>
+                                        <div class="tech-item">React Beautiful DnD</div>
+                                        <div class="tech-item">Chart.js</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-category">
+                                    <h3>Integração e Dados</h3>
+                                    <div class="tech-stack">
+                                        <div class="tech-item">Google Sheets API</div>
+                                        <div class="tech-item">OAuth2</div>
+                                        <div class="tech-item">Local Storage</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Análise Preditiva -->
+                        <div class="content-section">
+                            <h2 id="predictive">🤖 Análise Preditiva com IA</h2>
+                            <p>Sistema de inteligência artificial que analisa o desempenho da equipe e prediz resultados futuros com precisão de até 85%.</p>
+                            
+                            <div class="prediction-features">
+                                <div class="prediction-feature">
+                                    <div class="prediction-icon">🎯</div>
+                                    <h4>Previsão de Conclusão</h4>
+                                    <p>Calcula probabilidade de conclusão da sprint baseada no progresso atual e histórico da equipe.</p>
+                                </div>
+                                
+                                <div class="prediction-feature">
+                                    <div class="prediction-icon">⚡</div>
+                                    <h4>Otimização de Recursos</h4>
+                                    <p>Sugere redistribuição de tarefas entre desenvolvedores para maximizar eficiência da sprint.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sistema WIP -->
+                        <div class="content-section">
+                            <h2 id="wip-system">⚠️ Sistema WIP Inteligente</h2>
+                            <p>Controle inteligente de Work in Progress para maximizar fluxo e prevenir gargalos:</p>
+                            
+                            <div class="wip-alerts-grid">
+                                <div class="wip-alert-card">
+                                    <div class="wip-alert-icon success">✅</div>
+                                    <h4>WIP Ideal</h4>
+                                    <p>2-3 tarefas por desenvolvedor</p>
+                                    <span class="wip-status-good">Fluxo otimizado</span>
+                                </div>
+                                
+                                <div class="wip-alert-card">
+                                    <div class="wip-alert-icon warning">⚠️</div>
+                                    <h4>WIP Alto</h4>
+                                    <p>4-5 tarefas por desenvolvedor</p>
+                                    <span class="wip-status-warning">Atenção necessária</span>
+                                </div>
+                                
+                                <div class="wip-alert-card">
+                                    <div class="wip-alert-icon danger">🚨</div>
+                                    <h4>WIP Crítico</h4>
+                                    <p>6+ tarefas por desenvolvedor</p>
+                                    <span class="wip-status-critical">Ação imediata</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo -->
+                        <div class="content-section">
+                            <h2 id="demo">🎮 Experimente a TaskTracker</h2>
+                            <p>Acesse a TaskTracker e comece a gerenciar seus projetos Scrum hoje mesmo:</p>
+                            
+                            <div class="demo-options">
+                                <div class="demo-option">
+                                    <div class="demo-icon">🎮</div>
+                                    <h3>Modo Demo</h3>
+                                    <p>Explore todas as funcionalidades com dados de exemplo</p>
+                                    <a href="#" class="btn btn-primary">Iniciar Demo</a>
+                                </div>
+                                
+                                <div class="demo-option">
+                                    <div class="demo-icon">💾</div>
+                                    <h3>Local Storage</h3>
+                                    <p>Use offline com armazenamento local no seu navegador</p>
+                                    <a href="#" class="btn btn-secondary">Usar Localmente</a>
+                                </div>
+                                
+                                <div class="demo-option">
+                                    <div class="demo-icon">☁️</div>
+                                    <h3>Google Sheets</h3>
+                                    <p>Sincronize com Google Sheets para colaboração em equipe</p>
+                                    <a href="#" class="btn btn-outline">Conectar Google</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="content-cta">
+                            <div class="cta-content">
+                                <h2>🚀 Pronto para Revolucionar sua Gestão de Projetos?</h2>
+                                <p>Junte-se a milhares de equipes que já descobriram o poder da TaskTracker para Scrum</p>
+                                <div class="cta-buttons">
+                                    <a href="#" class="btn btn-primary">
+                                        Começar Agora - É Grátis!
+                                    </a>
+                                    <a href="contato.html" class="btn btn-secondary">
+                                        Fale com Nossa Equipe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>Ferramenta completa para gestão de projetos Scrum com Kanban, burndown chart e integração Google Sheets.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>TaskTracker</h3>
+                        <ul>
+                            <li><a href="#features">Funcionalidades</a></li>
+                            <li><a href="#demo">Experimente</a></li>
+                            <li><a href="#technology">Tecnologias</a></li>
+                            <li><a href="contato.html">Suporte</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="sobre-scrum.html">Fundamentos Scrum</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

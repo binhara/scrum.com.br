@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda o que é Scrum, seus princípios fundamentais, papéis, eventos e como essa metodologia ágil pode revolucionar seu desenvolvimento de software.">
+    <meta name="keywords" content="Scrum, metodologia ágil, Product Owner, Scrum Master, Sprint, desenvolvimento ágil, gestão de projetos">
+    <title>O que é Scrum e como funciona? | Portal Scrum</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/blog/o-que-e-scrum.html">
+    <meta property="og:title" content="O que é Scrum e como funciona?">
+    <meta property="og:description" content="Entenda o que é Scrum, seus princípios fundamentais, papéis, eventos e como essa metodologia ágil pode revolucionar seu desenvolvimento de software.">
+    <meta property="og:type" content="article">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="../pages/sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="../pages/tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="../pages/blog.html" class="nav-link active">Blog</a></li>
+                        <li><a href="../pages/contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="article-container">
+            <div class="container">
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-breadcrumb">
+                        <a href="../pages/blog.html" data-pt="Blog" data-en="Blog">Blog</a>
+                        <span>→</span>
+                        <span data-pt="Scrum" data-en="Scrum">Scrum</span>
+                    </div>
+                    
+                    <h1 class="article-title" data-pt="O que é Scrum e como funciona?" data-en="What is Scrum and how does it work?">
+                        O que é Scrum e como funciona?
+                    </h1>
+                    
+                    <div class="article-meta">
+                        <div class="meta-item">
+                            <span class="meta-label" data-pt="Publicado em:" data-en="Published on:">Publicado em:</span>
+                            <time datetime="2025-01-15">15 de Janeiro, 2025</time>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label" data-pt="Tempo de leitura:" data-en="Reading time:">Tempo de leitura:</span>
+                            <span data-pt="7 minutos" data-en="7 minutes">7 minutos</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label" data-pt="Autor:" data-en="Author:">Autor:</span>
+                            <span data-pt="Equipe Portal Scrum" data-en="Portal Scrum Team">Equipe Portal Scrum</span>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tags">
+                        <span class="tag">Scrum</span>
+                        <span class="tag" data-pt="Iniciante" data-en="Beginner">Iniciante</span>
+                        <span class="tag" data-pt="Fundamentos" data-en="Fundamentals">Fundamentos</span>
+                    </div>
+                </header>
+
+                <!-- Article Content -->
+                <div class="article-content">
+                    <div class="article-intro">
+                        <p class="lead" data-pt="Scrum é uma metodologia ágil que revolucionou a forma como equipes desenvolvem produtos, especialmente software. Criado por Ken Schwaber e Jeff Sutherland em 1995, o Scrum oferece um framework flexível para gerenciar projetos complexos com foco na entrega contínua de valor." data-en="Scrum is an agile methodology that revolutionized how teams develop products, especially software. Created by Ken Schwaber and Jeff Sutherland in 1995, Scrum provides a flexible framework for managing complex projects with a focus on continuous value delivery.">
+                            Scrum é uma metodologia ágil que revolucionou a forma como equipes desenvolvem produtos, especialmente software. Criado por Ken Schwaber e Jeff Sutherland em 1995, o Scrum oferece um framework flexível para gerenciar projetos complexos com foco na entrega contínua de valor.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Definição de Scrum" data-en="Definition of Scrum">Definição de Scrum</h2>
+                        <p data-pt="O termo 'Scrum' vem do rugby, onde descreve uma formação em que toda a equipe trabalha junta para mover a bola pelo campo. Essa analogia perfeita reflete como as equipes de desenvolvimento devem colaborar: todos trabalhando em direção ao mesmo objetivo, com responsabilidade compartilhada." data-en="The term 'Scrum' comes from rugby, where it describes a formation in which the entire team works together to move the ball down the field. This perfect analogy reflects how development teams should collaborate: everyone working toward the same goal, with shared responsibility.">
+                            O termo "Scrum" vem do rugby, onde descreve uma formação em que toda a equipe trabalha junta para mover a bola pelo campo. Essa analogia perfeita reflete como as equipes de desenvolvimento devem colaborar: todos trabalhando em direção ao mesmo objetivo, com responsabilidade compartilhada.
+                        </p>
+                        
+                        <p data-pt="O Scrum é definido como um framework leve que ajuda pessoas, equipes e organizações a gerar valor através de soluções adaptáveis para problemas complexos. É baseado na teoria empírica de controle de processos, priorizando transparência, inspeção e adaptação." data-en="Scrum is defined as a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems. It is based on the empirical theory of process control, prioritizing transparency, inspection and adaptation.">
+                            O Scrum é definido como um framework leve que ajuda pessoas, equipes e organizações a gerar valor através de soluções adaptáveis para problemas complexos. É baseado na teoria empírica de controle de processos, priorizando transparência, inspeção e adaptação.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Os Três Pilares do Scrum" data-en="The Three Pillars of Scrum">Os Três Pilares do Scrum</h2>
+                        
+                        <div class="pillars-grid">
+                            <div class="pillar-card">
+                                <div class="pillar-icon">🔍</div>
+                                <h3 data-pt="Transparência" data-en="Transparency">Transparência</h3>
+                                <p data-pt="Todos os aspectos significativos do processo devem estar visíveis para aqueles responsáveis pelos resultados. A transparência permite inspeção eficaz e garante que todos tenham o mesmo entendimento do que está acontecendo." data-en="All significant aspects of the process should be visible to those responsible for the results. Transparency enables effective inspection and ensures everyone has the same understanding of what is happening.">
+                                    Todos os aspectos significativos do processo devem estar visíveis para aqueles responsáveis pelos resultados. A transparência permite inspeção eficaz e garante que todos tenham o mesmo entendimento do que está acontecendo.
+                                </p>
+                            </div>
+                            
+                            <div class="pillar-card">
+                                <div class="pillar-icon">🔍</div>
+                                <h3 data-pt="Inspeção" data-en="Inspection">Inspeção</h3>
+                                <p data-pt="Os artefatos do Scrum e o progresso devem ser inspecionados frequentemente e de forma diligente para detectar variações potencialmente indesejáveis. A inspeção é facilitada pela transparência." data-en="Scrum artifacts and progress should be inspected frequently and diligently to detect potentially undesirable variations. Inspection is facilitated by transparency.">
+                                    Os artefatos do Scrum e o progresso devem ser inspecionados frequentemente e de forma diligente para detectar variações potencialmente indesejáveis. A inspeção é facilitada pela transparência.
+                                </p>
+                            </div>
+                            
+                            <div class="pillar-card">
+                                <div class="pillar-icon">🔄</div>
+                                <h3 data-pt="Adaptação" data-en="Adaptation">Adaptação</h3>
+                                <p data-pt="Se algum aspecto do processo se desviar dos limites aceitáveis, o processo ou material sendo produzido deve ser ajustado. O ajuste deve ser feito o mais rápido possível para minimizar desvios adicionais." data-en="If any aspect of the process deviates outside acceptable limits, the process or material being produced must be adjusted. The adjustment should be made as quickly as possible to minimize further deviation.">
+                                    Se algum aspecto do processo se desviar dos limites aceitáveis, o processo ou material sendo produzido deve ser ajustado. O ajuste deve ser feito o mais rápido possível para minimizar desvios adicionais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Os Papéis no Scrum" data-en="Scrum Roles">Os Papéis no Scrum</h2>
+                        <p data-pt="O Scrum define três papéis essenciais, cada um com responsabilidades específicas e complementares:" data-en="Scrum defines three essential roles, each with specific and complementary responsibilities:">
+                            O Scrum define três papéis essenciais, cada um com responsabilidades específicas e complementares:
+                        </p>
+
+                        <div class="roles-section">
+                            <div class="role-item">
+                                <div class="role-header">
+                                    <div class="role-icon">👑</div>
+                                    <h3>Product Owner</h3>
+                                </div>
+                                <p data-pt="O Product Owner é responsável por maximizar o valor do produto resultante do trabalho do time. É a única pessoa responsável por gerenciar o Product Backlog, definindo prioridades e garantindo que a equipe trabalhe nos itens mais valiosos." data-en="The Product Owner is responsible for maximizing the value of the product resulting from the team's work. They are the single person responsible for managing the Product Backlog, defining priorities and ensuring the team works on the most valuable items.">
+                                    O Product Owner é responsável por maximizar o valor do produto resultante do trabalho do time. É a única pessoa responsável por gerenciar o Product Backlog, definindo prioridades e garantindo que a equipe trabalhe nos itens mais valiosos.
+                                </p>
+                                <div class="role-responsibilities">
+                                    <h4 data-pt="Principais responsabilidades:" data-en="Key responsibilities:">Principais responsabilidades:</h4>
+                                    <ul>
+                                        <li data-pt="Definir e priorizar itens do Product Backlog" data-en="Define and prioritize Product Backlog items">Definir e priorizar itens do Product Backlog</li>
+                                        <li data-pt="Garantir que o Product Backlog seja transparente e compreensível" data-en="Ensure the Product Backlog is transparent and understandable">Garantir que o Product Backlog seja transparente e compreensível</li>
+                                        <li data-pt="Definir critérios de aceitação claros" data-en="Define clear acceptance criteria">Definir critérios de aceitação claros</li>
+                                        <li data-pt="Representar os interesses dos stakeholders" data-en="Represent stakeholder interests">Representar os interesses dos stakeholders</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="role-item">
+                                <div class="role-header">
+                                    <div class="role-icon">🎯</div>
+                                    <h3>Scrum Master</h3>
+                                </div>
+                                <p data-pt="O Scrum Master é responsável por estabelecer o Scrum conforme definido no Scrum Guide. Atua como um líder servidor, ajudando todos a entender teoria, práticas, regras e valores do Scrum. Remove impedimentos e facilita eventos Scrum." data-en="The Scrum Master is responsible for establishing Scrum as defined in the Scrum Guide. Acts as a servant leader, helping everyone understand Scrum theory, practices, rules and values. Removes impediments and facilitates Scrum events.">
+                                    O Scrum Master é responsável por estabelecer o Scrum conforme definido no Scrum Guide. Atua como um líder servidor, ajudando todos a entender teoria, práticas, regras e valores do Scrum. Remove impedimentos e facilita eventos Scrum.
+                                </p>
+                                <div class="role-responsibilities">
+                                    <h4 data-pt="Principais responsabilidades:" data-en="Key responsibilities:">Principais responsabilidades:</h4>
+                                    <ul>
+                                        <li data-pt="Facilitar eventos Scrum conforme necessário" data-en="Facilitate Scrum events as needed">Facilitar eventos Scrum conforme necessário</li>
+                                        <li data-pt="Remover impedimentos ao progresso da equipe" data-en="Remove impediments to team progress">Remover impedimentos ao progresso da equipe</li>
+                                        <li data-pt="Treinar a equipe em auto-gerenciamento e multifuncionalidade" data-en="Coach the team in self-management and cross-functionality">Treinar a equipe em auto-gerenciamento e multifuncionalidade</li>
+                                        <li data-pt="Proteger a equipe de interferências externas" data-en="Shield the team from external interference">Proteger a equipe de interferências externas</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="role-item">
+                                <div class="role-header">
+                                    <div class="role-icon">👥</div>
+                                    <h3 data-pt="Time de Desenvolvimento" data-en="Development Team">Time de Desenvolvimento</h3>
+                                </div>
+                                <p data-pt="Os Desenvolvedores são as pessoas do Time Scrum comprometidas em criar qualquer aspecto de um Incremento utilizável a cada Sprint. São responsáveis por transformar itens do Product Backlog em incrementos de produto potencialmente utilizáveis." data-en="Developers are the people in the Scrum Team that are committed to creating any aspect of a usable Increment each Sprint. They are responsible for turning Product Backlog items into potentially usable product increments.">
+                                    Os Desenvolvedores são as pessoas do Time Scrum comprometidas em criar qualquer aspecto de um Incremento utilizável a cada Sprint. São responsáveis por transformar itens do Product Backlog em incrementos de produto potencialmente utilizáveis.
+                                </p>
+                                <div class="role-responsibilities">
+                                    <h4 data-pt="Principais responsabilidades:" data-en="Key responsibilities:">Principais responsabilidades:</h4>
+                                    <ul>
+                                        <li data-pt="Criar um plano para a Sprint (Sprint Backlog)" data-en="Create a plan for the Sprint (Sprint Backlog)">Criar um plano para a Sprint (Sprint Backlog)</li>
+                                        <li data-pt="Garantir qualidade aderindo à Definition of Done" data-en="Ensure quality by adhering to the Definition of Done">Garantir qualidade aderindo à Definition of Done</li>
+                                        <li data-pt="Adaptar plano diariamente em direção ao Sprint Goal" data-en="Adapt the plan daily toward the Sprint Goal">Adaptar plano diariamente em direção ao Sprint Goal</li>
+                                        <li data-pt="Responsabilizar-se mutuamente como profissionais" data-en="Hold each other accountable as professionals">Responsabilizar-se mutuamente como profissionais</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Os Eventos do Scrum" data-en="Scrum Events">Os Eventos do Scrum</h2>
+                        <p data-pt="O Scrum define cinco eventos formais para inspeção e adaptação. Todos os eventos são time-boxed (têm duração máxima definida) e acontecem dentro da Sprint:" data-en="Scrum defines five formal events for inspection and adaptation. All events are time-boxed (have defined maximum duration) and occur within the Sprint:">
+                            O Scrum define cinco eventos formais para inspeção e adaptação. Todos os eventos são time-boxed (têm duração máxima definida) e acontecem dentro da Sprint:
+                        </p>
+
+                        <div class="events-timeline">
+                            <div class="event-item">
+                                <div class="event-icon">📅</div>
+                                <div class="event-content">
+                                    <h3>Sprint</h3>
+                                    <div class="event-duration" data-pt="Duração: 1 mês ou menos" data-en="Duration: 1 month or less">Duração: 1 mês ou menos</div>
+                                    <p data-pt="A Sprint é o coração do Scrum, um período de tempo fixo durante o qual um incremento de produto 'Pronto' e utilizável é criado. Todas as outras atividades do Scrum acontecem dentro da Sprint." data-en="The Sprint is the heart of Scrum, a fixed period of time during which a 'Done' and usable product increment is created. All other Scrum activities happen within the Sprint.">
+                                        A Sprint é o coração do Scrum, um período de tempo fixo durante o qual um incremento de produto "Pronto" e utilizável é criado. Todas as outras atividades do Scrum acontecem dentro da Sprint.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="event-item">
+                                <div class="event-icon">🎯</div>
+                                <div class="event-content">
+                                    <h3>Sprint Planning</h3>
+                                    <div class="event-duration" data-pt="Duração: 8h para Sprint de 1 mês" data-en="Duration: 8h for 1-month Sprint">Duração: 8h para Sprint de 1 mês</div>
+                                    <p data-pt="Evento que inicia a Sprint definindo o trabalho a ser realizado. A equipe planeja o trabalho necessário para atingir o Sprint Goal e seleciona itens do Product Backlog para incluir na Sprint atual." data-en="Event that starts the Sprint by defining the work to be performed. The team plans the work needed to achieve the Sprint Goal and selects Product Backlog items to include in the current Sprint.">
+                                        Evento que inicia a Sprint definindo o trabalho a ser realizado. A equipe planeja o trabalho necessário para atingir o Sprint Goal e seleciona itens do Product Backlog para incluir na Sprint atual.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="event-item">
+                                <div class="event-icon">☀️</div>
+                                <div class="event-content">
+                                    <h3>Daily Scrum</h3>
+                                    <div class="event-duration" data-pt="Duração: 15 minutos" data-en="Duration: 15 minutes">Duração: 15 minutos</div>
+                                    <p data-pt="Evento diário para os Desenvolvedores sincronizarem atividades e criarem um plano para as próximas 24 horas. Inspeciona o progresso em direção ao Sprint Goal e adapta o Sprint Backlog conforme necessário." data-en="Daily event for Developers to synchronize activities and create a plan for the next 24 hours. Inspects progress toward the Sprint Goal and adapts the Sprint Backlog as needed.">
+                                        Evento diário para os Desenvolvedores sincronizarem atividades e criarem um plano para as próximas 24 horas. Inspeciona o progresso em direção ao Sprint Goal e adapta o Sprint Backlog conforme necessário.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="event-item">
+                                <div class="event-icon">🎁</div>
+                                <div class="event-content">
+                                    <h3>Sprint Review</h3>
+                                    <div class="event-duration" data-pt="Duração: 4h para Sprint de 1 mês" data-en="Duration: 4h for 1-month Sprint">Duração: 4h para Sprint de 1 mês</div>
+                                    <p data-pt="Evento informal para apresentar os resultados da Sprint aos stakeholders e coletar feedback. A equipe inspecciona o resultado e discute o que fazer a seguir. O Product Backlog pode ser adaptado baseado no feedback." data-en="Informal event to present Sprint results to stakeholders and collect feedback. The team inspects the outcome and discusses what to do next. The Product Backlog may be adapted based on feedback.">
+                                        Evento informal para apresentar os resultados da Sprint aos stakeholders e coletar feedback. A equipe inspecciona o resultado e discute o que fazer a seguir. O Product Backlog pode ser adaptado baseado no feedback.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="event-item">
+                                <div class="event-icon">🔄</div>
+                                <div class="event-content">
+                                    <h3>Sprint Retrospective</h3>
+                                    <div class="event-duration" data-pt="Duração: 3h para Sprint de 1 mês" data-en="Duration: 3h for 1-month Sprint">Duração: 3h para Sprint de 1 mês</div>
+                                    <p data-pt="Oportunidade para o Time Scrum inspecionar a si próprio e criar um plano de melhorias para a próxima Sprint. Foca em como foi o trabalho em termos de pessoas, relacionamentos, processos e ferramentas." data-en="Opportunity for the Scrum Team to inspect itself and create a plan for improvements for the next Sprint. Focuses on how the work went in terms of people, relationships, processes and tools.">
+                                        Oportunidade para o Time Scrum inspecionar a si próprio e criar um plano de melhorias para a próxima Sprint. Foca em como foi o trabalho em termos de pessoas, relacionamentos, processos e ferramentas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Os Artefatos do Scrum" data-en="Scrum Artifacts">Os Artefatos do Scrum</h2>
+                        <p data-pt="Os artefatos do Scrum representam trabalho ou valor. Eles são projetados para maximizar a transparência de informações-chave. Cada artefato possui seu respectivo compromisso:" data-en="Scrum artifacts represent work or value. They are designed to maximize transparency of key information. Each artifact has its respective commitment:">
+                            Os artefatos do Scrum representam trabalho ou valor. Eles são projetados para maximizar a transparência de informações-chave. Cada artefato possui seu respectivo compromisso:
+                        </p>
+
+                        <div class="artifacts-grid">
+                            <div class="artifact-card">
+                                <h3>Product Backlog</h3>
+                                <div class="artifact-commitment" data-pt="Compromisso: Product Goal" data-en="Commitment: Product Goal">Compromisso: Product Goal</div>
+                                <p data-pt="Lista ordenada e emergente de tudo que é conhecido ser necessário no produto. É a única fonte de trabalho realizada pelo Time Scrum. Itens que podem ser feitos em uma Sprint são considerados prontos para seleção." data-en="Ordered and emerging list of everything known to be needed in the product. It is the single source of work undertaken by the Scrum Team. Items that can be Done in one Sprint are considered ready for selection.">
+                                    Lista ordenada e emergente de tudo que é conhecido ser necessário no produto. É a única fonte de trabalho realizada pelo Time Scrum. Itens que podem ser feitos em uma Sprint são considerados prontos para seleção.
+                                </p>
+                            </div>
+
+                            <div class="artifact-card">
+                                <h3>Sprint Backlog</h3>
+                                <div class="artifact-commitment" data-pt="Compromisso: Sprint Goal" data-en="Commitment: Sprint Goal">Compromisso: Sprint Goal</div>
+                                <p data-pt="Composto pelo Sprint Goal, itens do Product Backlog selecionados para a Sprint, além de um plano acionável para entregar o Incremento. É um plano feito por e para os Desenvolvedores, altamente visível e em tempo real." data-en="Composed of the Sprint Goal, Product Backlog items selected for the Sprint, plus an actionable plan for delivering the Increment. It is a plan by and for the Developers, highly visible and real-time.">
+                                    Composto pelo Sprint Goal, itens do Product Backlog selecionados para a Sprint, além de um plano acionável para entregar o Incremento. É um plano feito por e para os Desenvolvedores, altamente visível e em tempo real.
+                                </p>
+                            </div>
+
+                            <div class="artifact-card">
+                                <h3>Increment</h3>
+                                <div class="artifact-commitment" data-pt="Compromisso: Definition of Done" data-en="Commitment: Definition of Done">Compromisso: Definition of Done</div>
+                                <p data-pt="Degrau concreto em direção ao Product Goal. Cada Incremento é adicionado a todos os Incrementos anteriores e completamente verificado, garantindo que todos funcionem juntos. Para fornecer valor, deve ser utilizável." data-en="Concrete stepping stone toward the Product Goal. Each Increment is added to all prior Increments and thoroughly verified, ensuring they all work together. To provide value, it must be usable.">
+                                    Degrau concreto em direção ao Product Goal. Cada Incremento é adicionado a todos os Incrementos anteriores e completamente verificado, garantindo que todos funcionem juntos. Para fornecer valor, deve ser utilizável.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Por que usar Scrum?" data-en="Why use Scrum?">Por que usar Scrum?</h2>
+                        <p data-pt="O Scrum oferece inúmeras vantagens para equipes e organizações que buscam maior eficiência e qualidade no desenvolvimento de produtos:" data-en="Scrum offers numerous advantages for teams and organizations seeking greater efficiency and quality in product development:">
+                            O Scrum oferece inúmeras vantagens para equipes e organizações que buscam maior eficiência e qualidade no desenvolvimento de produtos:
+                        </p>
+
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">⚡</div>
+                                <h4 data-pt="Entregas Mais Rápidas" data-en="Faster Deliveries">Entregas Mais Rápidas</h4>
+                                <p data-pt="Sprints curtas permitem entregas frequentes de funcionalidades funcionais, proporcionando feedback rápido e valor contínuo ao cliente." data-en="Short Sprints allow frequent delivery of working features, providing rapid feedback and continuous value to the customer.">
+                                    Sprints curtas permitem entregas frequentes de funcionalidades funcionais, proporcionando feedback rápido e valor contínuo ao cliente.
+                                </p>
+                            </div>
+
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🔄</div>
+                                <h4 data-pt="Maior Flexibilidade" data-en="Greater Flexibility">Maior Flexibilidade</h4>
+                                <p data-pt="Capacidade de responder rapidamente a mudanças nos requisitos, prioridades e condições de mercado sem comprometer o progresso do projeto." data-en="Ability to respond quickly to changes in requirements, priorities and market conditions without compromising project progress.">
+                                    Capacidade de responder rapidamente a mudanças nos requisitos, prioridades e condições de mercado sem comprometer o progresso do projeto.
+                                </p>
+                            </div>
+
+                            <div class="benefit-item">
+                                <div class="benefit-icon">📈</div>
+                                <h4 data-pt="Qualidade Superior" data-en="Superior Quality">Qualidade Superior</h4>
+                                <p data-pt="Inspeção e adaptação contínuas, juntamente com a Definition of Done, garantem que a qualidade seja incorporada ao produto desde o início." data-en="Continuous inspection and adaptation, along with the Definition of Done, ensure that quality is built into the product from the start.">
+                                    Inspeção e adaptação contínuas, juntamente com a Definition of Done, garantem que a qualidade seja incorporada ao produto desde o início.
+                                </p>
+                            </div>
+
+                            <div class="benefit-item">
+                                <div class="benefit-icon">👥</div>
+                                <h4 data-pt="Melhor Colaboração" data-en="Better Collaboration">Melhor Colaboração</h4>
+                                <p data-pt="Eventos regulares e papéis claramente definidos promovem comunicação eficaz e trabalho em equipe entre todos os membros." data-en="Regular events and clearly defined roles promote effective communication and teamwork among all members.">
+                                    Eventos regulares e papéis claramente definidos promovem comunicação eficaz e trabalho em equipe entre todos os membros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Conclusão" data-en="Conclusion">Conclusão</h2>
+                        <p data-pt="O Scrum é muito mais do que apenas uma metodologia - é uma mudança cultural que coloca pessoas, colaboração e adaptação no centro do processo de desenvolvimento. Sua simplicidade e eficácia o tornam ideal para equipes que desejam entregar produtos de alta qualidade de forma consistente." data-en="Scrum is much more than just a methodology - it's a cultural change that puts people, collaboration and adaptation at the center of the development process. Its simplicity and effectiveness make it ideal for teams that want to consistently deliver high-quality products.">
+                            O Scrum é muito mais do que apenas uma metodologia - é uma mudança cultural que coloca pessoas, colaboração e adaptação no centro do processo de desenvolvimento. Sua simplicidade e eficácia o tornam ideal para equipes que desejam entregar produtos de alta qualidade de forma consistente.
+                        </p>
+
+                        <p data-pt="Se você está começando sua jornada no mundo ágil, o Scrum oferece uma base sólida para construir práticas eficazes de desenvolvimento. Lembre-se: o Scrum é fácil de entender, mas pode ser difícil de dominar. A prática constante e o comprometimento com seus valores são essenciais para o sucesso." data-en="If you're starting your journey in the agile world, Scrum provides a solid foundation for building effective development practices. Remember: Scrum is easy to understand, but can be difficult to master. Constant practice and commitment to its values are essential for success.">
+                            Se você está começando sua jornada no mundo ágil, o Scrum oferece uma base sólida para construir práticas eficazes de desenvolvimento. Lembre-se: o Scrum é fácil de entender, mas pode ser difícil de dominar. A prática constante e o comprometimento com seus valores são essenciais para o sucesso.
+                        </p>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="article-cta">
+                        <h3 data-pt="Pronto para implementar Scrum?" data-en="Ready to implement Scrum?">Pronto para implementar Scrum?</h3>
+                        <p data-pt="Conheça a TaskTracker, uma ferramenta que facilita a implementação do Scrum com quadros Kanban, gráficos de burndown e muito mais." data-en="Meet TaskTracker, a tool that facilitates Scrum implementation with Kanban boards, burndown charts and much more.">
+                            Conheça a TaskTracker, uma ferramenta que facilita a implementação do Scrum com quadros Kanban, gráficos de burndown e muito mais.
+                        </p>
+                        <a href="../pages/tasktracker.html" class="btn btn-primary" data-pt="Conhecer TaskTracker" data-en="Learn about TaskTracker">Conhecer TaskTracker</a>
+                    </div>
+
+                    <!-- Share Article -->
+                    <div class="article-share">
+                        <h4 data-pt="Compartilhe este artigo:" data-en="Share this article:">Compartilhe este artigo:</h4>
+                        <div class="share-buttons">
+                            <button class="share-btn linkedin" onclick="shareArticle('linkedin')" data-pt="LinkedIn" data-en="LinkedIn">📎 LinkedIn</button>
+                            <button class="share-btn twitter" onclick="shareArticle('twitter')" data-pt="Twitter" data-en="Twitter">🐦 Twitter</button>
+                            <button class="share-btn whatsapp" onclick="shareArticle('whatsapp')" data-pt="WhatsApp" data-en="WhatsApp">💬 WhatsApp</button>
+                            <button class="share-btn copy" onclick="copyArticleLink()" data-pt="Copiar Link" data-en="Copy Link">🔗 Copiar Link</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Articles -->
+                <aside class="related-articles">
+                    <h3 data-pt="Artigos Relacionados" data-en="Related Articles">Artigos Relacionados</h3>
+                    <div class="related-grid">
+                        <article class="related-card">
+                            <img src="../assets/images/blog-benefits-scrum.jpg" alt="Benefícios do Scrum" class="related-image">
+                            <div class="related-content">
+                                <h4><a href="beneficios-scrum-desenvolvimento.html" data-pt="Benefícios do uso de Scrum no desenvolvimento" data-en="Benefits of using Scrum in development">Benefícios do uso de Scrum no desenvolvimento</a></h4>
+                                <p data-pt="Descubra como o Scrum pode transformar a produtividade da sua equipe..." data-en="Discover how Scrum can transform your team's productivity...">
+                                    Descubra como o Scrum pode transformar a produtividade da sua equipe...
+                                </p>
+                            </div>
+                        </article>
+                        
+                        <article class="related-card">
+                            <img src="../assets/images/blog-tasktracker.jpg" alt="TaskTracker" class="related-image">
+                            <div class="related-content">
+                                <h4><a href="tasktracker-ferramenta-scrum.html" data-pt="TaskTracker: Ferramenta poderosa para Scrum" data-en="TaskTracker: Powerful tool for Scrum">TaskTracker: Ferramenta poderosa para Scrum</a></h4>
+                                <p data-pt="Conheça todas as funcionalidades da TaskTracker..." data-en="Learn about all TaskTracker features...">
+                                    Conheça todas as funcionalidades da TaskTracker...
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>Portal especializado em Scrum, metodologias ágeis, IA e Big Data com artigos práticos e insights valiosos para profissionais.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="../pages/sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="../pages/sprint-management.html">Sprint Management</a></li>
+                            <li><a href="../pages/sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="../pages/scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="../pages/product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="../pages/tasktracker.html">TaskTracker</a></li>
+                            <li><a href="../pages/blog.html">Blog</a></li>
+                            <li><a href="../pages/contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Article-specific functionality
+        function shareArticle(platform) {
+            const url = window.location.href;
+            const title = document.querySelector('.article-title').textContent;
+            
+            const shareUrls = {
+                linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+                twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+                whatsapp: `https://wa.me/?text=${encodeURIComponent(title + ' ' + url)}`
+            };
+            
+            if (shareUrls[platform]) {
+                window.open(shareUrls[platform], '_blank', 'width=600,height=400');
+            }
+        }
+        
+        function copyArticleLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                showNotification(
+                    currentLanguage === 'pt-BR' ? 
+                    'Link copiado para a área de transferência!' : 
+                    'Link copied to clipboard!',
+                    'success'
+                );
+            });
+        }
+    </script>
+</body>
+</html>

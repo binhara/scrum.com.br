@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo das Cerimônias Scrum: Sprint Planning, Daily Standups, Sprint Review e Sprint Retrospective. Aprenda objetivos, duração e melhores práticas.">
+    <meta name="keywords" content="Scrum Ceremonies, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective, eventos Scrum">
+    <title>Scrum Ceremonies - Guia Completo | Scrum.com.br</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/pages/scrum-ceremonies.html">
+    <meta property="og:title" content="Scrum Ceremonies - Guia Completo">
+    <meta property="og:description" content="Guia completo das Cerimônias Scrum: Sprint Planning, Daily Standups, Sprint Review e Sprint Retrospective. Aprenda objetivos, duração e melhores práticas.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.scrum.com.br/pages/scrum-ceremonies.html">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da Página -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Início</a> 
+                        <span>></span>
+                        <span>Scrum Ceremonies</span>
+                    </div>
+                    <h1 class="page-title">Scrum Ceremonies</h1>
+                    <p class="page-subtitle">
+                        Guia completo das reuniões estruturadas que facilitam comunicação, planejamento e melhoria contínua
+                    </p>
+                    <div class="page-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">🎭</div>
+                            <span>Todos os Níveis</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">⏱️</div>
+                            <span>18 min leitura</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">🗓️</div>
+                            <span>Cerimônias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <section class="page-content">
+            <div class="container">
+                <div class="content-layout">
+                    
+                    <!-- Sidebar de Navegação -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-sticky">
+                            <h3>📖 Neste Guia</h3>
+                            <nav class="content-nav">
+                                <a href="#introducao" class="nav-item">O que são Scrum Ceremonies</a>
+                                <a href="#sprint-planning" class="nav-item">Sprint Planning</a>
+                                <a href="#daily-scrum" class="nav-item">Daily Scrum</a>
+                                <a href="#sprint-review" class="nav-item">Sprint Review</a>
+                                <a href="#sprint-retrospective" class="nav-item">Sprint Retrospective</a>
+                                <a href="#timeline" class="nav-item">Timeline das Cerimônias</a>
+                                <a href="#praticas" class="nav-item">Melhores Práticas</a>
+                                <a href="#desafios" class="nav-item">Desafios Comuns</a>
+                            </nav>
+                            
+                            <!-- Guias Relacionados -->
+                            <div class="related-guides">
+                                <h4>🎯 Próximos Passos</h4>
+                                <div class="related-list">
+                                    <a href="sprint-planning-guide.html" class="related-item">
+                                        <div class="related-icon">📋</div>
+                                        <div class="related-info">
+                                            <strong>Sprint Planning</strong>
+                                            <span>Planejamento detalhado</span>
+                                        </div>
+                                    </a>
+                                    <a href="product-backlog-management.html" class="related-item">
+                                        <div class="related-icon">📊</div>
+                                        <div class="related-info">
+                                            <strong>Product Backlog</strong>
+                                            <span>Gestão de backlog</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Conteúdo do Artigo -->
+                    <article class="main-content">
+                        
+                        <!-- Introdução -->
+                        <div class="content-section">
+                            <h2 id="introducao">🎭 O que são Scrum Ceremonies?</h2>
+                            <div class="highlight-box">
+                                <p><strong>Scrum Ceremonies</strong> são reuniões estruturadas que ajudam equipes ágeis a se comunicarem, planejar e melhorar continuamente. Essas cerimônias facilitam a comunicação mas não tornam automaticamente uma equipe ágil - são ferramentas que devem ser usadas com propósito e disciplina.</p>
+                            </div>
+                            
+                            <p>As quatro principais cerimônias do Scrum formam o coração do framework, criando um ritmo consistente de planejamento, execução, inspeção e adaptação que mantém a equipe alinhada e focada na entrega de valor.</p>
+                        </div>
+
+                        <div class="content-section">
+                            <div class="info-box">
+                                <h3>As 4 Cerimônias Principais</h3>
+                                <ul>
+                                    <li>Sprint Planning - Planejamento</li>
+                                    <li>Daily Scrum - Sincronização diária</li>
+                                    <li>Sprint Review - Demonstração</li>
+                                    <li>Sprint Retrospective - Melhoria</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sprint Planning -->
+                        <div class="content-section">
+                            <div class="ceremony-section">
+                                <div class="ceremony-header">
+                                    <div class="ceremony-icon">📋</div>
+                                    <div class="ceremony-info">
+                                        <h2 id="sprint-planning">Sprint Planning</h2>
+                                        <div class="ceremony-meta">
+                                            <span class="ceremony-duration">Duração: 1h por semana de iteração</span>
+                                            <span class="ceremony-participants">Participantes: Time dev, Scrum Master, Product Owner</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ceremony-content">
+                                    <div class="ceremony-description">
+                                        <h3>Objetivo</h3>
+                                        <p>Identificar o que pode ser entregue no sprint e como esse trabalho será alcançado. A equipe cria o sprint backlog e planeja o trabalho colaborativamente.</p>
+                                    </div>
+                                    <div class="ceremony-details">
+                                        <div class="detail-section">
+                                            <h4>Saídas/Outputs:</h4>
+                                            <ul>
+                                                <li>Sprint backlog bem definido</li>
+                                                <li>Plano de trabalho da equipe</li>
+                                                <li>Objetivo claro do sprint</li>
+                                            </ul>
+                                        </div>
+                                        <div class="detail-section">
+                                            <h4>Melhores Práticas:</h4>
+                                            <ul>
+                                                <li>Prepare o backlog antes da reunião</li>
+                                                <li>Foque em objetivos, não em tarefas individuais</li>
+                                                <li>Use dados de velocidade histórica</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Daily Stand-up -->
+                        <div class="content-section">
+                            <div class="ceremony-section">
+                                <div class="ceremony-header">
+                                    <div class="ceremony-icon">☕</div>
+                                    <div class="ceremony-info">
+                                        <h2 id="daily-scrum">Daily Stand-up</h2>
+                                        <div class="ceremony-meta">
+                                            <span class="ceremony-duration">Duração: Máximo 15 minutos</span>
+                                            <span class="ceremony-participants">Participantes: Time dev, Scrum Master, Product Owner</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ceremony-content">
+                                    <div class="ceremony-description">
+                                        <h3>Objetivo</h3>
+                                        <p>Verificação rápida do progresso da equipe diariamente. Cada membro responde três perguntas básicas para manter transparência e identificar bloqueadores.</p>
+                                    </div>
+                                    <div class="daily-questions">
+                                        <h3>As 3 Perguntas Fundamentais</h3>
+                                        <div class="questions-grid">
+                                            <div class="question-card">
+                                                <div class="question-number">1</div>
+                                                <h4>O que fiz ontem?</h4>
+                                                <p>Atualização sobre o progresso feito no dia anterior</p>
+                                            </div>
+                                            <div class="question-card">
+                                                <div class="question-number">2</div>
+                                                <h4>O que farei hoje?</h4>
+                                                <p>Compromisso com as atividades do dia atual</p>
+                                            </div>
+                                            <div class="question-card">
+                                                <div class="question-number">3</div>
+                                                <h4>Há algum impedimento?</h4>
+                                                <p>Identificação de bloqueadores que precisam ser resolvidos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ceremony-tips">
+                                        <h4>Dicas para Times Distribuídos:</h4>
+                                        <ul>
+                                            <li>Use video chamada com todos os membros individualmente</li>
+                                            <li>Considere standups assíncronos se fusos horários diferem muito</li>
+                                            <li>Use ferramentas visuais como quadro Scrum</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sprint Review -->
+                        <div class="content-section">
+                            <div class="ceremony-section">
+                                <div class="ceremony-header">
+                                    <div class="ceremony-icon">📺</div>
+                                    <div class="ceremony-info">
+                                        <h2 id="sprint-review">Sprint Review</h2>
+                                        <div class="ceremony-meta">
+                                            <span class="ceremony-duration">Duração: 45min por semana de iteração</span>
+                                            <span class="ceremony-participants">Participantes: Time dev, SM, PO + Stakeholders</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ceremony-content">
+                                    <div class="ceremony-description">
+                                        <h3>Objetivo</h3>
+                                        <p>Apresentar o trabalho concluído durante o sprint. A equipe demonstra as funcionalidades implementadas e coleta feedback valioso dos stakeholders.</p>
+                                    </div>
+                                    <div class="ceremony-structure">
+                                        <h4>Estrutura Típica da Reunião:</h4>
+                                        <div class="structure-steps">
+                                            <div class="structure-step">
+                                                <span class="step-number">1</span>
+                                                <div class="step-content">
+                                                    <h5>Abertura e Contexto</h5>
+                                                    <p>Product Owner apresenta o objetivo do sprint e o que foi planejado</p>
+                                                </div>
+                                            </div>
+                                            <div class="structure-step">
+                                                <span class="step-number">2</span>
+                                                <div class="step-content">
+                                                    <h5>Demonstração</h5>
+                                                    <p>Time demonstra funcionalidades completadas e em funcionamento</p>
+                                                </div>
+                                            </div>
+                                            <div class="structure-step">
+                                                <span class="step-number">3</span>
+                                                <div class="step-content">
+                                                    <h5>Feedback e Discussão</h5>
+                                                    <p>Stakeholders fornecem feedback e sugerem melhorias</p>
+                                                </div>
+                                            </div>
+                                            <div class="structure-step">
+                                                <span class="step-number">4</span>
+                                                <div class="step-content">
+                                                    <h5>Próximos Passos</h5>
+                                                    <p>Discussão sobre prioridades futuras e adaptações no backlog</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-focus">
+                                        <h4>Focos Principais:</h4>
+                                        <div class="focus-grid">
+                                            <div class="focus-item">
+                                                <span class="focus-icon">✅</span>
+                                                <h5>Demonstrar valor entregue</h5>
+                                            </div>
+                                            <div class="focus-item">
+                                                <span class="focus-icon">💬</span>
+                                                <h5>Coletar feedback dos stakeholders</h5>
+                                            </div>
+                                            <div class="focus-item">
+                                                <span class="focus-icon">🔄</span>
+                                                <h5>Adaptar o Product Backlog</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sprint Retrospective -->
+                        <div class="content-section">
+                            <div class="ceremony-section">
+                                <div class="ceremony-header">
+                                    <div class="ceremony-icon">🔄</div>
+                                    <div class="ceremony-info">
+                                        <h2 id="sprint-retrospective">Sprint Retrospective</h2>
+                                        <div class="ceremony-meta">
+                                            <span class="ceremony-duration">Duração: 45min por semana de iteração</span>
+                                            <span class="ceremony-participants">Participantes: Time dev, SM, PO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ceremony-content">
+                                    <div class="ceremony-description">
+                                        <h3>Objetivo</h3>
+                                        <p>Revisar o que foi bem-sucedido durante o sprint e o que pode ser melhorado. Cria um "lugar seguro" para focar na introspecção e adaptação contínua.</p>
+                                    </div>
+                                    <div class="retrospective-structure">
+                                        <h4>Estrutura Típica da Retrospectiva:</h4>
+                                        <div class="retro-steps">
+                                            <div class="retro-step">
+                                                <h5>1. Criar lista do que funcionou bem e o que poderia ser melhorado</h5>
+                                            </div>
+                                            <div class="retro-step">
+                                                <h5>2. Priorizar a lista por importância</h5>
+                                            </div>
+                                            <div class="retro-step">
+                                                <h5>3. Discutir formas de melhorar os itens de maior prioridade</h5>
+                                            </div>
+                                            <div class="retro-step">
+                                                <h5>4. Criar plano de melhoria acionável</h5>
+                                            </div>
+                                            <div class="retro-step">
+                                                <h5>5. Garantir follow-through dos itens de ação</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="retrospective-techniques">
+                                        <h4>Técnicas Variadas:</h4>
+                                        <div class="techniques-grid">
+                                            <div class="technique-item">
+                                                <h5>Start/Stop/Continue</h5>
+                                                <p>O que começar a fazer, parar de fazer e continuar fazendo</p>
+                                            </div>
+                                            <div class="technique-item">
+                                                <h5>More/Less</h5>
+                                                <p>O que fazer mais e o que fazer menos no próximo sprint</p>
+                                            </div>
+                                            <div class="technique-item">
+                                                <h5>Glad/Sad/Mad</h5>
+                                                <p>Sentimentos sobre o que deixou feliz, triste ou irritado</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="retrospective-principles">
+                                        <h4>Princípios Fundamentais:</h4>
+                                        <ul>
+                                            <li>Foque nos resultados, não nas pessoas ou falhas passadas</li>
+                                            <li>Encoraje diálogo aberto e construtivo</li>
+                                            <li>Crie itens de ação claros e com responsáveis definidos</li>
+                                            <li>Mantenha atmosfera positiva e energizante</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline das Cerimônias -->
+                        <div class="content-section">
+                            <h2 id="timeline">📅 Timeline das Cerimônias no Sprint</h2>
+                            <div class="sprint-timeline">
+                                <div class="timeline-container">
+                                    <div class="timeline-event start">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h3>Sprint Planning</h3>
+                                            <p>Início do sprint</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-event daily">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h3>Daily Scrums</h3>
+                                            <p>Todos os dias durante o sprint</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-event review">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h3>Sprint Review</h3>
+                                            <p>Final do sprint - demonstração</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-event retrospective">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h3>Sprint Retrospective</h3>
+                                            <p>Final do sprint - melhoria</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Melhores Práticas -->
+                        <div class="content-section">
+                            <h2 id="praticas">✅ Melhores Práticas Gerais</h2>
+                            <div class="best-practices-ceremonies">
+                                <div class="practice-category">
+                                    <h3>Facilitação Efetiva</h3>
+                                    <div class="practice-items">
+                                        <div class="practice-item">
+                                            <span class="practice-icon">⏰</span>
+                                            <div class="practice-text">
+                                                <h4>Respeitar Time-boxing</h4>
+                                                <p>Manter reuniões dentro do tempo estipulado para evitar fadiga da equipe</p>
+                                            </div>
+                                        </div>
+                                        <div class="practice-item">
+                                            <span class="practice-icon">🎯</span>
+                                            <div class="practice-text">
+                                                <h4>Manter Foco no Objetivo</h4>
+                                                <p>Cada cerimônia tem um propósito específico que deve ser respeitado</p>
+                                            </div>
+                                        </div>
+                                        <div class="practice-item">
+                                            <span class="practice-icon">👥</span>
+                                            <div class="practice-text">
+                                                <h4>Promover Participação</h4>
+                                                <p>Garantir que todos os membros da equipe contribuam ativamente</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="practice-category">
+                                    <h3>Melhoria Contínua</h3>
+                                    <div class="practice-items">
+                                        <div class="practice-item">
+                                            <span class="practice-icon">📊</span>
+                                            <div class="practice-text">
+                                                <h4>Adaptar às Necessidades</h4>
+                                                <p>Ajustar formato e duração das cerimônias conforme a equipe amadurece</p>
+                                            </div>
+                                        </div>
+                                        <div class="practice-item">
+                                            <span class="practice-icon">🔄</span>
+                                            <div class="practice-text">
+                                                <h4>Feedback Regular</h4>
+                                                <p>Coletar feedback sobre a efetividade das cerimônias nas retrospectivas</p>
+                                            </div>
+                                        </div>
+                                        <div class="practice-item">
+                                            <span class="practice-icon">🎨</span>
+                                            <div class="practice-text">
+                                                <h4>Variar Formatos</h4>
+                                                <p>Usar diferentes técnicas e formatos para manter engajamento</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desafios Comuns -->
+                        <div class="content-section">
+                            <h2 id="desafios">⚠️ Desafios Comuns e Soluções</h2>
+                            <div class="challenges-ceremonies">
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">😴</div>
+                                    <h3>Reuniões Sem Engajamento</h3>
+                                    <div class="challenge-content">
+                                        <p>Participantes passivos, discussões superficiais e falta de energia durante as cerimônias.</p>
+                                        <div class="solution">
+                                            <h4>Soluções:</h4>
+                                            <ul>
+                                                <li>Variar facilitadores e formatos das reuniões</li>
+                                                <li>Usar técnicas interativas como jogos e dinâmicas</li>
+                                                <li>Conectar sempre ao valor para o cliente final</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">⏳</div>
+                                    <h3>Excesso de Tempo</h3>
+                                    <div class="challenge-content">
+                                        <p>Cerimônias que se estendem além do time-box estabelecido, causando fadiga e reduzindo efetividade.</p>
+                                        <div class="solution">
+                                            <h4>Soluções:</h4>
+                                            <ul>
+                                                <li>Definir e comunicar agenda clara antes da reunião</li>
+                                                <li>Usar timer visível e revezar quem controla o tempo</li>
+                                                <li>Mover discussões detalhadas para fora da cerimônia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="challenge-item">
+                                    <div class="challenge-icon">🎭</div>
+                                    <h3>Cerimônias "de Teatro"</h3>
+                                    <div class="challenge-content">
+                                        <p>Realizar cerimônias apenas por obrigação, sem real propósito ou valor agregado para a equipe.</p>
+                                        <div class="solution">
+                                            <h4>Soluções:</h4>
+                                            <ul>
+                                                <li>Questionar regularmente o valor de cada cerimônia</li>
+                                                <li>Adaptar formatos às necessidades reais da equipe</li>
+                                                <li>Conectar resultados das cerimônias a melhorias mensuráveis</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="content-cta">
+                            <div class="cta-content">
+                                <h2>🚀 Pronto para otimizar suas Scrum Ceremonies?</h2>
+                                <p>A TaskTracker oferece ferramentas integradas para facilitar todas as cerimônias Scrum: templates para planning, dashboards para daily, apresentações para review e formulários para retrospectivas.</p>
+                                <div class="cta-buttons">
+                                    <a href="tasktracker.html" class="btn btn-primary">
+                                        Experimente a TaskTracker
+                                    </a>
+                                    <a href="product-backlog-management.html" class="btn btn-secondary">
+                                        Product Backlog Management
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>O maior portal de conteúdo sobre metodologia Scrum no Brasil, com guias detalhados e melhores práticas para transformar equipes.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="sprint-management.html">Sprint Management</a></li>
+                            <li><a href="sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="tasktracker.html">TaskTracker</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

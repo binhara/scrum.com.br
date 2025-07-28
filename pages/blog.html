@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog sobre Scrum, metodologias ágeis, gestão de projetos, Inteligência Artificial e Big Data. Artigos especializados e dicas práticas.">
+    <meta name="keywords" content="blog Scrum, metodologias ágeis, gestão de projetos, IA, Big Data, artigos técnicos, TaskTracker">
+    <title>Blog - Scrum, IA e Big Data | Scrum.com.br</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/pages/blog.html">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero da Página -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Início</a> 
+                        <span>></span>
+                        <span>Blog</span>
+                    </div>
+                    <h1 class="page-title">Blog Scrum</h1>
+                    <p class="page-subtitle">
+                        Artigos especializados sobre Scrum, metodologias ágeis, gestão de projetos, IA e Big Data
+                    </p>
+                    <div class="page-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">📝</div>
+                            <span>Artigos Especializados</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">🔄</div>
+                            <span>Atualizado Diariamente</span>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">🎯</div>
+                            <span>Conteúdo Prático</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <section class="page-content">
+            <div class="container">
+                <div class="content-layout">
+                    
+                    <!-- Sidebar de Navegação -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-sticky">
+                            <h3>📚 Categorias</h3>
+                            <nav class="content-nav">
+                                <a href="#featured" class="nav-item">Artigo em Destaque</a>
+                                <a href="#scrum" class="nav-item">Scrum</a>
+                                <a href="#tasktracker" class="nav-item">TaskTracker</a>
+                                <a href="#ia" class="nav-item">Inteligência Artificial</a>
+                                <a href="#bigdata" class="nav-item">Big Data</a>
+                                <a href="#newsletter" class="nav-item">Newsletter</a>
+                            </nav>
+                            
+                            <!-- Links Relacionados -->
+                            <div class="related-guides">
+                                <h4>🔗 Links Úteis</h4>
+                                <div class="related-list">
+                                    <a href="sobre-scrum.html" class="related-item">
+                                        <div class="related-icon">📖</div>
+                                        <div class="related-info">
+                                            <strong>Fundamentos Scrum</strong>
+                                            <span>Guia completo</span>
+                                        </div>
+                                    </a>
+                                    <a href="tasktracker.html" class="related-item">
+                                        <div class="related-icon">🛠️</div>
+                                        <div class="related-info">
+                                            <strong>TaskTracker</strong>
+                                            <span>Ferramenta gratuita</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Conteúdo do Artigo -->
+                    <article class="main-content">
+                        
+                        <!-- Search and Filters -->
+                        <div class="content-section">
+                            <h2>🔍 Busca e Filtros</h2>
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Buscar artigos..." data-pt-placeholder="Buscar artigos..." data-en-placeholder="Search articles...">
+                                <div class="search-results"></div>
+                            </div>
+                            <div class="category-filters">
+                                <button class="filter-btn active" data-category="all" data-pt="Todos" data-en="All">Todos</button>
+                                <button class="filter-btn" data-category="scrum" data-pt="Scrum" data-en="Scrum">Scrum</button>
+                                <button class="filter-btn" data-category="tasktracker" data-pt="TaskTracker" data-en="TaskTracker">TaskTracker</button>
+                                <button class="filter-btn" data-category="ia" data-pt="Inteligência Artificial" data-en="Artificial Intelligence">Inteligência Artificial</button>
+                                <button class="filter-btn" data-category="bigdata" data-pt="Big Data" data-en="Big Data">Big Data</button>
+                            </div>
+                        </div>
+
+                        <!-- Featured Article -->
+                        <div class="content-section" id="featured">
+                            <h2>⭐ Artigo em Destaque</h2>
+                            <div class="featured-content">
+                                <div class="featured-image">
+                                    <img src="../assets/images/featured-scrum-guide.jpg" alt="Guia Completo Scrum 2025" class="featured-img">
+                                    <div class="featured-category">Scrum</div>
+                                </div>
+                                <div class="featured-text">
+                                    <span class="featured-label" data-pt="Artigo em Destaque" data-en="Featured Article">Artigo em Destaque</span>
+                                    <h3><a href="../blog/guia-completo-scrum-2025.html" data-pt="Guia Completo do Scrum 2025" data-en="Complete Scrum 2025 Guide">Guia Completo do Scrum 2025</a></h3>
+                                    <p data-pt="Descubra todas as atualizações do Scrum Guide 2025, as principais mudanças nos papéis, eventos e artefatos, e como adaptar sua equipe às novas práticas recomendadas." data-en="Discover all Scrum Guide 2025 updates, the main changes in roles, events and artifacts, and how to adapt your team to the new recommended practices.">
+                                        Descubra todas as atualizações do Scrum Guide 2025, as principais mudanças nos papéis, eventos e artefatos, e como adaptar sua equipe às novas práticas recomendadas.
+                                    </p>
+                                    <div class="article-meta">
+                                        <time datetime="2025-01-18">18 de Janeiro, 2025</time>
+                                        <span>•</span>
+                                        <span data-pt="10 min de leitura" data-en="10 min read">10 min de leitura</span>
+                                        <span>•</span>
+                                        <span data-pt="Por Equipe Scrum.com.br" data-en="By Scrum.com.br Team">Por Equipe Scrum.com.br</span>
+                                    </div>
+                                    <a href="../blog/guia-completo-scrum-2025.html" class="btn btn-primary" data-pt="Ler Artigo Completo" data-en="Read Full Article">Ler Artigo Completo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Articles Grid -->
+                        <div class="content-section">
+                            <h2 id="scrum">📋 Últimos Artigos</h2>
+                            
+                            <div class="articles-grid">
+                                <!-- Scrum Articles -->
+                                <article class="article-card" data-category="scrum">
+                                    <div class="article-image">
+                                        <img src="../assets/images/blog-scrum-intro.jpg" alt="O que é Scrum" class="article-img">
+                                        <div class="article-category">Scrum</div>
+                                    </div>
+                                    <div class="article-content">
+                                        <h3><a href="../blog/o-que-e-scrum.html" data-pt="O que é Scrum?" data-en="What is Scrum?">O que é Scrum?</a></h3>
+                                        <p data-pt="Entenda os fundamentos da metodologia ágil mais popular do mundo, seus princípios, papéis e como implementar em sua organização." data-en="Understand the fundamentals of the world's most popular agile methodology, its principles, roles and how to implement it in your organization.">
+                                            Entenda os fundamentos da metodologia ágil mais popular do mundo, seus princípios, papéis e como implementar em sua organização.
+                                        </p>
+                                        <div class="article-meta">
+                                            <time datetime="2025-01-15">15 de Janeiro, 2025</time>
+                                            <span>•</span>
+                                            <span data-pt="7 min" data-en="7 min">7 min</span>
+                                        </div>
+                                        <div class="article-tags">
+                                            <span class="tag">Scrum</span>
+                                            <span class="tag" data-pt="Iniciante" data-en="Beginner">Iniciante</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="article-card" data-category="scrum">
+                                    <div class="article-image">
+                                        <img src="../assets/images/blog-benefits-scrum.jpg" alt="Benefícios do Scrum" class="article-img">
+                                        <div class="article-category">Scrum</div>
+                                    </div>
+                                    <div class="article-content">
+                                        <h3><a href="../blog/beneficios-scrum-desenvolvimento.html">Benefícios do Scrum no desenvolvimento</a></h3>
+                                        <p>Descubra como o Scrum pode transformar a produtividade da sua equipe, melhorar a qualidade do software e aumentar a satisfação do cliente.</p>
+                                        <div class="article-meta">
+                                            <time datetime="2025-01-14">14 de Janeiro, 2025</time>
+                                            <span>•</span>
+                                            <span>6 min</span>
+                                        </div>
+                                        <div class="article-tags">
+                                            <span class="tag">Scrum</span>
+                                            <span class="tag">Benefícios</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- TaskTracker Articles -->
+                                <article class="article-card" data-category="tasktracker" id="tasktracker">
+                                    <div class="article-image">
+                                        <img src="../assets/images/blog-tasktracker.jpg" alt="TaskTracker" class="article-img">
+                                        <div class="article-category">TaskTracker</div>
+                                    </div>
+                                    <div class="article-content">
+                                        <h3><a href="../blog/tasktracker-ferramenta-scrum.html">TaskTracker para equipes Scrum</a></h3>
+                                        <p>Conheça todas as funcionalidades da TaskTracker e como ela pode revolucionar a gestão de projetos da sua equipe ágil.</p>
+                                        <div class="article-meta">
+                                            <time datetime="2025-01-12">12 de Janeiro, 2025</time>
+                                            <span>•</span>
+                                            <span>8 min</span>
+                                        </div>
+                                        <div class="article-tags">
+                                            <span class="tag">TaskTracker</span>
+                                            <span class="tag">Ferramenta</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- AI Articles -->
+                                <article class="article-card" data-category="ia" id="ia">
+                                    <div class="article-image">
+                                        <img src="../assets/images/blog-ia-projetos.jpg" alt="IA na Gestão de Projetos" class="article-img">
+                                        <div class="article-category">IA</div>
+                                    </div>
+                                    <div class="article-content">
+                                        <h3><a href="../blog/ia-machine-learning-gestao-projetos.html">IA na gestão de projetos</a></h3>
+                                        <p>Como a inteligência artificial está transformando a forma de gerenciar projetos, desde previsão de riscos até otimização de recursos.</p>
+                                        <div class="article-meta">
+                                            <time datetime="2025-01-10">10 de Janeiro, 2025</time>
+                                            <span>•</span>
+                                            <span>11 min</span>
+                                        </div>
+                                        <div class="article-tags">
+                                            <span class="tag">IA</span>
+                                            <span class="tag">Gestão</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Big Data Articles -->
+                                <article class="article-card" data-category="bigdata" id="bigdata">
+                                    <div class="article-image">
+                                        <img src="../assets/images/blog-bigdata-business.jpg" alt="Big Data nos Negócios" class="article-img">
+                                        <div class="article-category">Big Data</div>
+                                    </div>
+                                    <div class="article-content">
+                                        <h3><a href="../blog/big-data-impacto-inteligencia-negocios.html">Big Data na inteligência de negócios</a></h3>
+                                        <p>Entenda como o Big Data está revolucionando a tomada de decisões empresariais e gerando insights valiosos para organizações.</p>
+                                        <div class="article-meta">
+                                            <time datetime="2025-01-09">9 de Janeiro, 2025</time>
+                                            <span>•</span>
+                                            <span>12 min</span>
+                                        </div>
+                                        <div class="article-tags">
+                                            <span class="tag">Big Data</span>
+                                            <span class="tag">Negócios</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- More Articles -->
+                                <article class="article-card" data-category="scrum">
+                                    <div class="article-image">
+                                        <img src="../assets/images/blog-success-stories.jpg" alt="Histórias de Sucesso Scrum" class="article-img">
+                                        <div class="article-category">Scrum</div>
+                                    </div>
+                                    <div class="article-content">
+                                        <h3><a href="../blog/historias-sucesso-empresas-scrum.html">Cases de sucesso com Scrum</a></h3>
+                                        <p>Casos reais de empresas que transformaram seus resultados implementando Scrum: Netflix, Spotify, ING Bank e outras.</p>
+                                        <div class="article-meta">
+                                            <time datetime="2025-01-08">8 de Janeiro, 2025</time>
+                                            <span>•</span>
+                                            <span>15 min</span>
+                                        </div>
+                                        <div class="article-tags">
+                                            <span class="tag">Scrum</span>
+                                            <span class="tag">Casos de Sucesso</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Load More -->
+                            <div class="load-more-container">
+                                <button class="btn btn-outline load-more-btn" data-pt="Carregar Mais Artigos" data-en="Load More Articles">Carregar Mais Artigos</button>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="content-section" id="newsletter">
+                            <h2>📧 Newsletter</h2>
+                            <div class="newsletter-content">
+                                <h3 data-pt="Não perca nenhum artigo!" data-en="Don't miss any article!">Não perca nenhum artigo!</h3>
+                                <p data-pt="Receba notificações dos nossos novos conteúdos sobre Scrum, IA e Big Data" data-en="Get notifications about our new content on Scrum, AI and Big Data">
+                                    Receba notificações dos nossos novos conteúdos sobre Scrum, IA e Big Data
+                                </p>
+                                <form class="newsletter-form">
+                                    <input type="email" placeholder="Seu e-mail" data-pt-placeholder="Seu e-mail" data-en-placeholder="Your email" required>
+                                    <button type="submit" class="btn btn-primary" data-pt="Inscrever-se" data-en="Subscribe">Inscrever-se</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <div class="content-cta">
+                            <div class="cta-content">
+                                <h2>🚀 Aprofunde seus conhecimentos em Scrum</h2>
+                                <p>Explore nossos guias completos e ferramentas práticas para dominar metodologias ágeis</p>
+                                <div class="cta-buttons">
+                                    <a href="sobre-scrum.html" class="btn btn-primary">
+                                        Guia Completo do Scrum
+                                    </a>
+                                    <a href="tasktracker.html" class="btn btn-secondary">
+                                        Experimente TaskTracker
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>Blog especializado em Scrum, metodologias ágeis, IA e Big Data com artigos práticos e insights valiosos para profissionais.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="#scrum">Artigos Scrum</a></li>
+                            <li><a href="#tasktracker">TaskTracker</a></li>
+                            <li><a href="#ia">Inteligência Artificial</a></li>
+                            <li><a href="#bigdata">Big Data</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="sobre-scrum.html">Fundamentos Scrum</a></li>
+                            <li><a href="tasktracker.html">TaskTracker</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</body>
+</html>

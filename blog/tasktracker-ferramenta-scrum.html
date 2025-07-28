@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a TaskTracker, uma ferramenta completa para equipes Scrum com Kanban, burndown, sprints e integração com Google Sheets. Descubra todas as funcionalidades.">
+    <meta name="keywords" content="TaskTracker, Scrum, Kanban, burndown, gestão de projetos, Google Sheets, ferramenta ágil, sprint management">
+    <title>TaskTracker: Uma ferramenta poderosa para equipes Scrum | Portal Scrum</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/modern-styles.css">
+    <link rel="stylesheet" href="../assets/css/portal-styles.css">
+    <link rel="canonical" href="https://www.scrum.com.br/blog/tasktracker-ferramenta-scrum.html">
+    <meta property="og:title" content="TaskTracker: Uma ferramenta poderosa para equipes Scrum">
+    <meta property="og:description" content="Conheça a TaskTracker, uma ferramenta completa para equipes Scrum com Kanban, burndown, sprints e integração com Google Sheets.">
+    <meta property="og:type" content="article">
+</head>
+<body>
+    <!-- Header Portal Consistente -->
+    <header class="header-portal">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo_scrum.svg" alt="Logo do Portal Scrum" class="logo-img">
+                        <span class="logo-text">Scrum.com.br</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="../pages/sobre-scrum.html" class="nav-link">Sobre Scrum</a></li>
+                        <li><a href="../pages/tasktracker.html" class="nav-link">TaskTracker</a></li>
+                        <li><a href="../pages/blog.html" class="nav-link active">Blog</a></li>
+                        <li><a href="../pages/contato.html" class="nav-link">Contato</a></li>
+                        <li class="language-selector">
+                            <select id="language-select" onchange="changeLanguage(this.value)">
+                                <option value="pt-BR">🇧🇷 PT</option>
+                                <option value="en">🇺🇸 EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="article-container">
+            <div class="container">
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-breadcrumb">
+                        <a href="../pages/blog.html" data-pt="Blog" data-en="Blog">Blog</a>
+                        <span>→</span>
+                        <span data-pt="TaskTracker" data-en="TaskTracker">TaskTracker</span>
+                    </div>
+                    
+                    <h1 class="article-title" data-pt="TaskTracker: Uma ferramenta poderosa para equipes Scrum" data-en="TaskTracker: A powerful tool for Scrum teams">
+                        TaskTracker: Uma ferramenta poderosa para equipes Scrum
+                    </h1>
+                    
+                    <div class="article-meta">
+                        <div class="meta-item">
+                            <span class="meta-label" data-pt="Publicado em:" data-en="Published on:">Publicado em:</span>
+                            <time datetime="2025-01-12">12 de Janeiro, 2025</time>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label" data-pt="Tempo de leitura:" data-en="Reading time:">Tempo de leitura:</span>
+                            <span data-pt="8 minutos" data-en="8 minutes">8 minutos</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label" data-pt="Autor:" data-en="Author:">Autor:</span>
+                            <span data-pt="Equipe Portal Scrum" data-en="Portal Scrum Team">Equipe Portal Scrum</span>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tags">
+                        <span class="tag">TaskTracker</span>
+                        <span class="tag" data-pt="Ferramenta" data-en="Tool">Ferramenta</span>
+                        <span class="tag">Scrum</span>
+                        <span class="tag">Kanban</span>
+                    </div>
+                </header>
+
+                <!-- Article Content -->
+                <div class="article-content">
+                    <div class="article-intro">
+                        <p class="lead" data-pt="Em um mundo onde a agilidade é fundamental para o sucesso de projetos de software, ter as ferramentas certas pode fazer toda a diferença. A TaskTracker emerge como uma solução completa e inovadora para equipes que adotam a metodologia Scrum, oferecendo funcionalidades avançadas em uma interface intuitiva e acessível." data-en="In a world where agility is fundamental to software project success, having the right tools can make all the difference. TaskTracker emerges as a complete and innovative solution for teams adopting the Scrum methodology, offering advanced features in an intuitive and accessible interface.">
+                            Em um mundo onde a agilidade é fundamental para o sucesso de projetos de software, ter as ferramentas certas pode fazer toda a diferença. A TaskTracker emerge como uma solução completa e inovadora para equipes que adotam a metodologia Scrum, oferecendo funcionalidades avançadas em uma interface intuitiva e acessível.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="O que é a TaskTracker?" data-en="What is TaskTracker?">O que é a TaskTracker?</h2>
+                        <p data-pt="A TaskTracker é uma ferramenta web de gestão de tarefas especificamente projetada para equipes que utilizam metodologias ágeis, com foco principal no framework Scrum. Inspirada no Trello, mas com funcionalidades muito mais robustas, a TaskTracker vai além de um simples quadro Kanban, oferecendo recursos avançados como gráficos de burndown, gestão completa de sprints e integração nativa com Google Sheets." data-en="TaskTracker is a web task management tool specifically designed for teams using agile methodologies, with main focus on the Scrum framework. Inspired by Trello, but with much more robust features, TaskTracker goes beyond a simple Kanban board, offering advanced resources like burndown charts, complete sprint management and native Google Sheets integration.">
+                            A TaskTracker é uma ferramenta web de gestão de tarefas especificamente projetada para equipes que utilizam metodologias ágeis, com foco principal no framework Scrum. Inspirada no Trello, mas com funcionalidades muito mais robustas, a TaskTracker vai além de um simples quadro Kanban, oferecendo recursos avançados como gráficos de burndown, gestão completa de sprints e integração nativa com Google Sheets.
+                        </p>
+                        
+                        <p data-pt="Desenvolvida com as mais modernas tecnologias web, incluindo React 18, Material-UI e Chart.js, a TaskTracker representa uma evolução natural das ferramentas de gestão de projetos, combinando simplicidade de uso com poder funcional." data-en="Developed with the most modern web technologies, including React 18, Material-UI and Chart.js, TaskTracker represents a natural evolution of project management tools, combining ease of use with functional power.">
+                            Desenvolvida com as mais modernas tecnologias web, incluindo React 18, Material-UI e Chart.js, a TaskTracker representa uma evolução natural das ferramentas de gestão de projetos, combinando simplicidade de uso com poder funcional.
+                        </p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Funcionalidades Principais" data-en="Main Features">Funcionalidades Principais</h2>
+                        
+                        <div class="features-showcase">
+                            <div class="feature-detail">
+                                <h3 data-pt="📋 Visualização Kanban Avançada" data-en="📋 Advanced Kanban Visualization">📋 Visualização Kanban Avançada</h3>
+                                <p data-pt="O coração da TaskTracker é seu sistema Kanban altamente customizável. Diferente de outras ferramentas, oferece:" data-en="The heart of TaskTracker is its highly customizable Kanban system. Unlike other tools, it offers:">
+                                    O coração da TaskTracker é seu sistema Kanban altamente customizável. Diferente de outras ferramentas, oferece:
+                                </p>
+                                <ul>
+                                    <li data-pt="<strong>Colunas Personalizáveis:</strong> Backlog, Priorizado, Doing e Done são configurações padrão, mas você pode adaptar conforme sua necessidade" data-en="<strong>Customizable Columns:</strong> Backlog, Prioritized, Doing and Done are default settings, but you can adapt according to your needs"><strong>Colunas Personalizáveis:</strong> Backlog, Priorizado, Doing e Done são configurações padrão, mas você pode adaptar conforme sua necessidade</li>
+                                    <li data-pt="<strong>Drag-and-Drop Intuitivo:</strong> Movimente tarefas entre colunas com facilidade usando React Beautiful DnD" data-en="<strong>Intuitive Drag-and-Drop:</strong> Move tasks between columns easily using React Beautiful DnD"><strong>Drag-and-Drop Intuitivo:</strong> Movimente tarefas entre colunas com facilidade usando React Beautiful DnD</li>
+                                    <li data-pt="<strong>Filtros Avançados:</strong> Filtre por desenvolvedor, prioridade, status ou tags personalizadas" data-en="<strong>Advanced Filters:</strong> Filter by developer, priority, status or custom tags"><strong>Filtros Avançados:</strong> Filtre por desenvolvedor, prioridade, status ou tags personalizadas</li>
+                                    <li data-pt="<strong>Indicadores Visuais:</strong> Cores e ícones que facilitam a identificação rápida do status das tarefas" data-en="<strong>Visual Indicators:</strong> Colors and icons that facilitate quick task status identification"><strong>Indicadores Visuais:</strong> Cores e ícones que facilitam a identificação rápida do status das tarefas</li>
+                                    <li data-pt="<strong>Contadores Automáticos:</strong> Veja quantas tarefas existem em cada coluna em tempo real" data-en="<strong>Automatic Counters:</strong> See how many tasks exist in each column in real-time"><strong>Contadores Automáticos:</strong> Veja quantas tarefas existem em cada coluna em tempo real</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-detail">
+                                <h3 data-pt="📊 Gráfico de Burndown Dinâmico" data-en="📊 Dynamic Burndown Chart">📊 Gráfico de Burndown Dinâmico</h3>
+                                <p data-pt="Uma das funcionalidades mais poderosas da TaskTracker é seu sistema de burndown em tempo real:" data-en="One of TaskTracker's most powerful features is its real-time burndown system:">
+                                    Uma das funcionalidades mais poderosas da TaskTracker é seu sistema de burndown em tempo real:
+                                </p>
+                                <ul>
+                                    <li data-pt="<strong>Atualização Automática:</strong> O gráfico se atualiza instantaneamente conforme tarefas são movidas" data-en="<strong>Automatic Updates:</strong> Chart updates instantly as tasks are moved"><strong>Atualização Automática:</strong> O gráfico se atualiza instantaneamente conforme tarefas são movidas</li>
+                                    <li data-pt="<strong>Linha Ideal:</strong> Compare o progresso real com o ritmo ideal planejado" data-en="<strong>Ideal Line:</strong> Compare real progress with planned ideal pace"><strong>Linha Ideal:</strong> Compare o progresso real com o ritmo ideal planejado</li>
+                                    <li data-pt="<strong>Métricas Detalhadas:</strong> Velocidade da equipe, tempo restante, tarefas concluídas por dia" data-en="<strong>Detailed Metrics:</strong> Team velocity, remaining time, tasks completed per day"><strong>Métricas Detalhadas:</strong> Velocidade da equipe, tempo restante, tarefas concluídas por dia</li>
+                                    <li data-pt="<strong>Previsão de Entrega:</strong> Estimativa baseada no desempenho atual da equipe" data-en="<strong>Delivery Forecast:</strong> Estimate based on team's current performance"><strong>Previsão de Entrega:</strong> Estimativa baseada no desempenho atual da equipe</li>
+                                    <li data-pt="<strong>Alertas Visuais:</strong> Indicações quando a sprint está atrasada ou adiantada" data-en="<strong>Visual Alerts:</strong> Indications when sprint is behind or ahead of schedule"><strong>Alertas Visuais:</strong> Indicações quando a sprint está atrasada ou adiantada</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-detail">
+                                <h3 data-pt="📈 Gestão Completa de Sprints" data-en="📈 Complete Sprint Management">📈 Gestão Completa de Sprints</h3>
+                                <p data-pt="A TaskTracker revoluciona a gestão de sprints com um sistema otimizado de 10 dias:" data-en="TaskTracker revolutionizes sprint management with an optimized 10-day system:">
+                                    A TaskTracker revoluciona a gestão de sprints com um sistema otimizado de 10 dias:
+                                </p>
+                                <ul>
+                                    <li data-pt="<strong>Ciclos de 10 Dias:</strong> Período otimizado para máxima produtividade e foco" data-en="<strong>10-Day Cycles:</strong> Period optimized for maximum productivity and focus"><strong>Ciclos de 10 Dias:</strong> Período otimizado para máxima produtividade e foco</li>
+                                    <li data-pt="<strong>Relatórios Automáticos:</strong> Geração automática de relatórios de conclusão de sprint" data-en="<strong>Automatic Reports:</strong> Automatic generation of sprint completion reports"><strong>Relatórios Automáticos:</strong> Geração automática de relatórios de conclusão de sprint</li>
+                                    <li data-pt="<strong>Histórico Completo:</strong> Acesso a todas as sprints anteriores com métricas preservadas" data-en="<strong>Complete History:</strong> Access to all previous sprints with preserved metrics"><strong>Histórico Completo:</strong> Acesso a todas as sprints anteriores com métricas preservadas</li>
+                                    <li data-pt="<strong>Análise de Performance:</strong> Compare a performance entre sprints diferentes" data-en="<strong>Performance Analysis:</strong> Compare performance between different sprints"><strong>Análise de Performance:</strong> Compare a performance entre sprints diferentes</li>
+                                    <li data-pt="<strong>Planejamento Inteligente:</strong> Sugestões baseadas em sprints anteriores" data-en="<strong>Intelligent Planning:</strong> Suggestions based on previous sprints"><strong>Planejamento Inteligente:</strong> Sugestões baseadas em sprints anteriores</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-detail">
+                                <h3 data-pt="📋 Visualização em Tabela" data-en="📋 Table View">📋 Visualização em Tabela</h3>
+                                <p data-pt="Para equipes que preferem uma visão mais tradicional, a TaskTracker oferece uma poderosa visualização em tabela:" data-en="For teams that prefer a more traditional view, TaskTracker offers a powerful table visualization:">
+                                    Para equipes que preferem uma visão mais tradicional, a TaskTracker oferece uma poderosa visualização em tabela:
+                                </p>
+                                <ul>
+                                    <li data-pt="<strong>Edição Inline:</strong> Edite tarefas diretamente na tabela sem pop-ups" data-en="<strong>Inline Editing:</strong> Edit tasks directly in the table without pop-ups"><strong>Edição Inline:</strong> Edite tarefas diretamente na tabela sem pop-ups</li>
+                                    <li data-pt="<strong>Ordenação Avançada:</strong> Ordene por qualquer coluna ou múltiplos critérios" data-en="<strong>Advanced Sorting:</strong> Sort by any column or multiple criteria"><strong>Ordenação Avançada:</strong> Ordene por qualquer coluna ou múltiplos critérios</li>
+                                    <li data-pt="<strong>Filtros Múltiplos:</strong> Combine múltiplos filtros para visualizações personalizadas" data-en="<strong>Multiple Filters:</strong> Combine multiple filters for custom views"><strong>Filtros Múltiplos:</strong> Combine múltiplos filtros para visualizações personalizadas</li>
+                                    <li data-pt="<strong>Exportação Excel/CSV:</strong> Exporte dados para análise externa" data-en="<strong>Excel/CSV Export:</strong> Export data for external analysis"><strong>Exportação Excel/CSV:</strong> Exporte dados para análise externa</li>
+                                    <li data-pt="<strong>Colunas Customizáveis:</strong> Escolha quais informações exibir" data-en="<strong>Customizable Columns:</strong> Choose which information to display"><strong>Colunas Customizáveis:</strong> Escolha quais informações exibir</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Inovação: Integração com Google Sheets" data-en="Innovation: Google Sheets Integration">Inovação: Integração com Google Sheets</h2>
+                        <p data-pt="Uma das funcionalidades mais revolucionárias da TaskTracker v2.0 é sua integração nativa com Google Sheets, que oferece:" data-en="One of the most revolutionary features of TaskTracker v2.0 is its native Google Sheets integration, which offers:">
+                            Uma das funcionalidades mais revolucionárias da TaskTracker v2.0 é sua integração nativa com Google Sheets, que oferece:
+                        </p>
+
+                        <div class="integration-features">
+                            <div class="integration-card">
+                                <div class="integration-icon">🔐</div>
+                                <h4 data-pt="Autenticação OAuth2 Segura" data-en="Secure OAuth2 Authentication">Autenticação OAuth2 Segura</h4>
+                                <p data-pt="Conexão segura com sua conta Google usando os mais altos padrões de segurança. Seus dados estão sempre protegidos e você mantém controle total sobre as permissões." data-en="Secure connection to your Google account using the highest security standards. Your data is always protected and you maintain full control over permissions.">
+                                    Conexão segura com sua conta Google usando os mais altos padrões de segurança. Seus dados estão sempre protegidos e você mantém controle total sobre as permissões.
+                                </p>
+                            </div>
+
+                            <div class="integration-card">
+                                <div class="integration-icon">🔄</div>
+                                <h4 data-pt="Sincronização Bidirecional" data-en="Bidirectional Synchronization">Sincronização Bidirecional</h4>
+                                <p data-pt="Mudanças feitas na TaskTracker são automaticamente refletidas no Google Sheets e vice-versa. Trabalhe na plataforma que preferir - os dados sempre estarão sincronizados." data-en="Changes made in TaskTracker are automatically reflected in Google Sheets and vice versa. Work on your preferred platform - data will always be synchronized.">
+                                    Mudanças feitas na TaskTracker são automaticamente refletidas no Google Sheets e vice-versa. Trabalhe na plataforma que preferir - os dados sempre estarão sincronizados.
+                                </p>
+                            </div>
+
+                            <div class="integration-card">
+                                <div class="integration-icon">📧</div>
+                                <h4 data-pt="Compartilhamento por E-mail" data-en="Email Sharing">Compartilhamento por E-mail</h4>
+                                <p data-pt="Compartilhe planilhas diretamente por e-mail com stakeholders, clientes ou membros da equipe que preferem trabalhar no Google Sheets." data-en="Share spreadsheets directly via email with stakeholders, clients or team members who prefer to work in Google Sheets.">
+                                    Compartilhe planilhas diretamente por e-mail com stakeholders, clientes ou membros da equipe que preferem trabalhar no Google Sheets.
+                                </p>
+                            </div>
+
+                            <div class="integration-card">
+                                <div class="integration-icon">☁️</div>
+                                <h4 data-pt="Backup Automático na Nuvem" data-en="Automatic Cloud Backup">Backup Automático na Nuvem</h4>
+                                <p data-pt="Seus dados ficam automaticamente salvos no Google Drive, garantindo que nunca sejam perdidos e estejam acessíveis de qualquer lugar." data-en="Your data is automatically saved to Google Drive, ensuring it's never lost and accessible from anywhere.">
+                                    Seus dados ficam automaticamente salvos no Google Drive, garantindo que nunca sejam perdidos e estejam acessíveis de qualquer lugar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Modo Demo: Experimente Antes de Usar" data-en="Demo Mode: Try Before You Use">Modo Demo: Experimente Antes de Usar</h2>
+                        <p data-pt="A TaskTracker oferece um modo demo completamente funcional que permite explorar todas as funcionalidades sem precisar criar uma conta ou inserir dados reais:" data-en="TaskTracker offers a fully functional demo mode that allows you to explore all features without needing to create an account or enter real data:">
+                            A TaskTracker oferece um modo demo completamente funcional que permite explorar todas as funcionalidades sem precisar criar uma conta ou inserir dados reais:
+                        </p>
+
+                        <div class="demo-features">
+                            <div class="demo-item">
+                                <h4 data-pt="🎮 10 Tarefas de Exemplo" data-en="🎮 10 Sample Tasks">🎮 10 Tarefas de Exemplo</h4>
+                                <p data-pt="Tarefas realistas baseadas em projetos reais de desenvolvimento, incluindo diferentes tipos como bugs, features e melhorias." data-en="Realistic tasks based on real development projects, including different types like bugs, features and improvements.">
+                                    Tarefas realistas baseadas em projetos reais de desenvolvimento, incluindo diferentes tipos como bugs, features e melhorias.
+                                </p>
+                            </div>
+
+                            <div class="demo-item">
+                                <h4 data-pt="👥 5 Desenvolvedores Virtuais" data-en="👥 5 Virtual Developers">👥 5 Desenvolvedores Virtuais</h4>
+                                <p data-pt="Personas de desenvolvedores com diferentes especialidades: Frontend, Backend, Full-stack, QA e DevOps." data-en="Developer personas with different specialties: Frontend, Backend, Full-stack, QA and DevOps.">
+                                    Personas de desenvolvedores com diferentes especialidades: Frontend, Backend, Full-stack, QA e DevOps.
+                                </p>
+                            </div>
+
+                            <div class="demo-item">
+                                <h4 data-pt="🎯 Cenários Práticos" data-en="🎯 Practical Scenarios">🎯 Cenários Práticos</h4>
+                                <p data-pt="Simule situações reais como sprints em andamento, burndown charts com diferentes padrões e resolução de impedimentos." data-en="Simulate real situations like ongoing sprints, burndown charts with different patterns and impediment resolution.">
+                                    Simule situações reais como sprints em andamento, burndown charts com diferentes padrões e resolução de impedimentos.
+                                </p>
+                            </div>
+
+                            <div class="demo-item">
+                                <h4 data-pt="🔄 Reset Automático" data-en="🔄 Automatic Reset">🔄 Reset Automático</h4>
+                                <p data-pt="A qualquer momento, você pode resetar o demo para o estado inicial e começar uma nova exploração." data-en="At any time, you can reset the demo to its initial state and start a new exploration.">
+                                    A qualquer momento, você pode resetar o demo para o estado inicial e começar uma nova exploração.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Tecnologias e Arquitetura" data-en="Technologies and Architecture">Tecnologias e Arquitetura</h2>
+                        <p data-pt="A TaskTracker é construída com as mais modernas tecnologias web, garantindo performance, confiabilidade e experiência de usuário excepcional:" data-en="TaskTracker is built with the most modern web technologies, ensuring performance, reliability and exceptional user experience:">
+                            A TaskTracker é construída com as mais modernas tecnologias web, garantindo performance, confiabilidade e experiência de usuário excepcional:
+                        </p>
+
+                        <div class="tech-stack-detailed">
+                            <div class="tech-category">
+                                <h4 data-pt="Frontend" data-en="Frontend">Frontend</h4>
+                                <ul>
+                                    <li data-pt="<strong>React 18:</strong> Framework moderno com Concurrent Features para melhor performance" data-en="<strong>React 18:</strong> Modern framework with Concurrent Features for better performance"><strong>React 18:</strong> Framework moderno com Concurrent Features para melhor performance</li>
+                                    <li data-pt="<strong>Material-UI:</strong> Componentes elegantes seguindo Material Design" data-en="<strong>Material-UI:</strong> Elegant components following Material Design"><strong>Material-UI:</strong> Componentes elegantes seguindo Material Design</li>
+                                    <li data-pt="<strong>React Beautiful DnD:</strong> Drag-and-drop fluido e acessível" data-en="<strong>React Beautiful DnD:</strong> Fluid and accessible drag-and-drop"><strong>React Beautiful DnD:</strong> Drag-and-drop fluido e acessível</li>
+                                    <li data-pt="<strong>Chart.js:</strong> Gráficos interativos e responsivos" data-en="<strong>Chart.js:</strong> Interactive and responsive charts"><strong>Chart.js:</strong> Gráficos interativos e responsivos</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-category">
+                                <h4 data-pt="Integração e Dados" data-en="Integration and Data">Integração e Dados</h4>
+                                <ul>
+                                    <li data-pt="<strong>Google Sheets API:</strong> Integração nativa com planilhas Google" data-en="<strong>Google Sheets API:</strong> Native integration with Google spreadsheets"><strong>Google Sheets API:</strong> Integração nativa com planilhas Google</li>
+                                    <li data-pt="<strong>OAuth2:</strong> Autenticação segura e padrão da indústria" data-en="<strong>OAuth2:</strong> Secure authentication and industry standard"><strong>OAuth2:</strong> Autenticação segura e padrão da indústria</li>
+                                    <li data-pt="<strong>SheetJS:</strong> Manipulação e exportação de planilhas" data-en="<strong>SheetJS:</strong> Spreadsheet manipulation and export"><strong>SheetJS:</strong> Manipulação e exportação de planilhas</li>
+                                    <li data-pt="<strong>Local Storage:</strong> Persistência local para modo offline" data-en="<strong>Local Storage:</strong> Local persistence for offline mode"><strong>Local Storage:</strong> Persistência local para modo offline</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-category">
+                                <h4 data-pt="Utilitários" data-en="Utilities">Utilitários</h4>
+                                <ul>
+                                    <li data-pt="<strong>date-fns:</strong> Manipulação avançada de datas e horários" data-en="<strong>date-fns:</strong> Advanced date and time manipulation"><strong>date-fns:</strong> Manipulação avançada de datas e horários</li>
+                                    <li data-pt="<strong>PWA Ready:</strong> Funciona como aplicativo móvel" data-en="<strong>PWA Ready:</strong> Works as mobile application"><strong>PWA Ready:</strong> Funciona como aplicativo móvel</li>
+                                    <li data-pt="<strong>Responsive Design:</strong> Adaptável a qualquer dispositivo" data-en="<strong>Responsive Design:</strong> Adaptable to any device"><strong>Responsive Design:</strong> Adaptável a qualquer dispositivo</li>
+                                    <li data-pt="<strong>Real-time Updates:</strong> Atualizações em tempo real" data-en="<strong>Real-time Updates:</strong> Real-time updates"><strong>Real-time Updates:</strong> Atualizações em tempo real</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Como Começar" data-en="How to Get Started">Como Começar</h2>
+                        <p data-pt="A TaskTracker oferece três formas diferentes de uso, adequadas para diferentes necessidades e contextos:" data-en="TaskTracker offers three different ways of use, suitable for different needs and contexts:">
+                            A TaskTracker oferece três formas diferentes de uso, adequadas para diferentes necessidades e contextos:
+                        </p>
+
+                        <div class="usage-modes">
+                            <div class="mode-card">
+                                <div class="mode-icon">🎮</div>
+                                <h4 data-pt="Modo Demo" data-en="Demo Mode">Modo Demo</h4>
+                                <p data-pt="Perfeito para conhecer a ferramenta e suas funcionalidades sem comprometimento. Inclui dados de exemplo e cenários realistas." data-en="Perfect for getting to know the tool and its features without commitment. Includes sample data and realistic scenarios.">
+                                    Perfeito para conhecer a ferramenta e suas funcionalidades sem comprometimento. Inclui dados de exemplo e cenários realistas.
+                                </p>
+                                <div class="mode-benefits">
+                                    <span data-pt="✓ Sem cadastro necessário" data-en="✓ No registration required">✓ Sem cadastro necessário</span>
+                                    <span data-pt="✓ Dados de exemplo inclusos" data-en="✓ Sample data included">✓ Dados de exemplo inclusos</span>
+                                    <span data-pt="✓ Todas as funcionalidades disponíveis" data-en="✓ All features available">✓ Todas as funcionalidades disponíveis</span>
+                                </div>
+                            </div>
+
+                            <div class="mode-card">
+                                <div class="mode-icon">💾</div>
+                                <h4 data-pt="Local Storage" data-en="Local Storage">Local Storage</h4>
+                                <p data-pt="Ideal para uso pessoal ou pequenas equipes. Os dados ficam salvos localmente no seu navegador, garantindo privacidade total." data-en="Ideal for personal use or small teams. Data is saved locally in your browser, ensuring complete privacy.">
+                                    Ideal para uso pessoal ou pequenas equipes. Os dados ficam salvos localmente no seu navegador, garantindo privacidade total.
+                                </p>
+                                <div class="mode-benefits">
+                                    <span data-pt="✓ Funciona offline" data-en="✓ Works offline">✓ Funciona offline</span>
+                                    <span data-pt="✓ Privacidade total" data-en="✓ Complete privacy">✓ Privacidade total</span>
+                                    <span data-pt="✓ Sem limitações de uso" data-en="✓ No usage limitations">✓ Sem limitações de uso</span>
+                                </div>
+                            </div>
+
+                            <div class="mode-card">
+                                <div class="mode-icon">☁️</div>
+                                <h4 data-pt="Google Sheets" data-en="Google Sheets">Google Sheets</h4>
+                                <p data-pt="A opção mais poderosa para equipes que precisam de colaboração avançada, backup automático e integração com outras ferramentas Google." data-en="The most powerful option for teams that need advanced collaboration, automatic backup and integration with other Google tools.">
+                                    A opção mais poderosa para equipes que precisam de colaboração avançada, backup automático e integração com outras ferramentas Google.
+                                </p>
+                                <div class="mode-benefits">
+                                    <span data-pt="✓ Colaboração em tempo real" data-en="✓ Real-time collaboration">✓ Colaboração em tempo real</span>
+                                    <span data-pt="✓ Backup automático" data-en="✓ Automatic backup">✓ Backup automático</span>
+                                    <span data-pt="✓ Compartilhamento avançado" data-en="✓ Advanced sharing">✓ Compartilhamento avançado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Benefícios para Equipes Scrum" data-en="Benefits for Scrum Teams">Benefícios para Equipes Scrum</h2>
+                        <p data-pt="A TaskTracker não é apenas uma ferramenta de gestão de tarefas - é uma solução completa que potencializa os benefícios da metodologia Scrum:" data-en="TaskTracker is not just a task management tool - it's a complete solution that enhances the benefits of the Scrum methodology:">
+                            A TaskTracker não é apenas uma ferramenta de gestão de tarefas - é uma solução completa que potencializa os benefícios da metodologia Scrum:
+                        </p>
+
+                        <div class="scrum-benefits">
+                            <div class="benefit-card">
+                                <h4 data-pt="🎯 Transparência Total" data-en="🎯 Total Transparency">🎯 Transparência Total</h4>
+                                <p data-pt="Todos os membros da equipe têm visibilidade completa do progresso, impedimentos e métricas da sprint." data-en="All team members have complete visibility of progress, impediments and sprint metrics.">
+                                    Todos os membros da equipe têm visibilidade completa do progresso, impedimentos e métricas da sprint.
+                                </p>
+                            </div>
+
+                            <div class="benefit-card">
+                                <h4 data-pt="📊 Decisões Baseadas em Dados" data-en="📊 Data-Driven Decisions">📊 Decisões Baseadas em Dados</h4>
+                                <p data-pt="Gráficos e relatórios detalhados fornecem insights valiosos para melhorar continuamente o processo." data-en="Detailed charts and reports provide valuable insights to continuously improve the process.">
+                                    Gráficos e relatórios detalhados fornecem insights valiosos para melhorar continuamente o processo.
+                                </p>
+                            </div>
+
+                            <div class="benefit-card">
+                                <h4 data-pt="⚡ Redução de Overhead" data-en="⚡ Reduced Overhead">⚡ Redução de Overhead</h4>
+                                <p data-pt="Automatização de tarefas administrativas permite que a equipe foque no que realmente importa: entregar valor." data-en="Automation of administrative tasks allows the team to focus on what really matters: delivering value.">
+                                    Automatização de tarefas administrativas permite que a equipe foque no que realmente importa: entregar valor.
+                                </p>
+                            </div>
+
+                            <div class="benefit-card">
+                                <h4 data-pt="🔄 Melhoria Contínua" data-en="🔄 Continuous Improvement">🔄 Melhoria Contínua</h4>
+                                <p data-pt="Histórico detalhado de sprints facilita retrospectivas mais produtivas e identificação de padrões." data-en="Detailed sprint history facilitates more productive retrospectives and pattern identification.">
+                                    Histórico detalhado de sprints facilita retrospectivas mais produtivas e identificação de padrões.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 data-pt="Conclusão" data-en="Conclusion">Conclusão</h2>
+                        <p data-pt="A TaskTracker representa uma nova era nas ferramentas de gestão de projetos ágeis. Combinando a simplicidade de uso com funcionalidades avançadas, ela oferece tudo que uma equipe Scrum precisa para ser mais produtiva, transparente e eficaz." data-en="TaskTracker represents a new era in agile project management tools. Combining ease of use with advanced features, it offers everything a Scrum team needs to be more productive, transparent and effective.">
+                            A TaskTracker representa uma nova era nas ferramentas de gestão de projetos ágeis. Combinando a simplicidade de uso com funcionalidades avançadas, ela oferece tudo que uma equipe Scrum precisa para ser mais produtiva, transparente e eficaz.
+                        </p>
+
+                        <p data-pt="Seja você um Scrum Master experiente, um Product Owner buscando melhor visibilidade, ou um desenvolvedor que quer uma ferramenta mais intuitiva, a TaskTracker tem funcionalidades pensadas especificamente para suas necessidades." data-en="Whether you're an experienced Scrum Master, a Product Owner seeking better visibility, or a developer who wants a more intuitive tool, TaskTracker has features designed specifically for your needs.">
+                            Seja você um Scrum Master experiente, um Product Owner buscando melhor visibilidade, ou um desenvolvedor que quer uma ferramenta mais intuitiva, a TaskTracker tem funcionalidades pensadas especificamente para suas necessidades.
+                        </p>
+
+                        <p data-pt="O melhor de tudo: é completamente gratuita. Experimente hoje mesmo e descubra como a TaskTracker pode transformar a forma como sua equipe trabalha." data-en="Best of all: it's completely free. Try it today and discover how TaskTracker can transform the way your team works.">
+                            O melhor de tudo: é completamente gratuita. Experimente hoje mesmo e descubra como a TaskTracker pode transformar a forma como sua equipe trabalha.
+                        </p>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="article-cta">
+                        <h3 data-pt="Experimente a TaskTracker Agora!" data-en="Try TaskTracker Now!">Experimente a TaskTracker Agora!</h3>
+                        <p data-pt="Comece com o modo demo e veja como a TaskTracker pode revolucionar a gestão de projetos da sua equipe." data-en="Start with demo mode and see how TaskTracker can revolutionize your team's project management.">
+                            Comece com o modo demo e veja como a TaskTracker pode revolucionar a gestão de projetos da sua equipe.
+                        </p>
+                        <a href="../pages/tasktracker.html" class="btn btn-primary" data-pt="Acessar TaskTracker" data-en="Access TaskTracker">Acessar TaskTracker</a>
+                    </div>
+
+                    <!-- Share Article -->
+                    <div class="article-share">
+                        <h4 data-pt="Compartilhe este artigo:" data-en="Share this article:">Compartilhe este artigo:</h4>
+                        <div class="share-buttons">
+                            <button class="share-btn linkedin" onclick="shareArticle('linkedin')">📎 LinkedIn</button>
+                            <button class="share-btn twitter" onclick="shareArticle('twitter')">🐦 Twitter</button>
+                            <button class="share-btn whatsapp" onclick="shareArticle('whatsapp')">💬 WhatsApp</button>
+                            <button class="share-btn copy" onclick="copyArticleLink()">🔗 <span data-pt="Copiar Link" data-en="Copy Link">Copiar Link</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Articles -->
+                <aside class="related-articles">
+                    <h3 data-pt="Artigos Relacionados" data-en="Related Articles">Artigos Relacionados</h3>
+                    <div class="related-grid">
+                        <article class="related-card">
+                            <img src="../assets/images/blog-scrum-intro.jpg" alt="O que é Scrum" class="related-image">
+                            <div class="related-content">
+                                <h4><a href="o-que-e-scrum.html" data-pt="O que é Scrum e como funciona?" data-en="What is Scrum and how does it work?">O que é Scrum e como funciona?</a></h4>
+                                <p data-pt="Entenda os fundamentos da metodologia ágil mais popular..." data-en="Understand the fundamentals of the most popular agile methodology...">
+                                    Entenda os fundamentos da metodologia ágil mais popular...
+                                </p>
+                            </div>
+                        </article>
+                        
+                        <article class="related-card">
+                            <img src="../assets/images/blog-implement-scrum.jpg" alt="Como implementar Scrum" class="related-image">
+                            <div class="related-content">
+                                <h4><a href="como-implementar-scrum.html" data-pt="Como implementar Scrum na sua equipe" data-en="How to implement Scrum in your team">Como implementar Scrum na sua equipe</a></h4>
+                                <p data-pt="Guia prático passo a passo para implementar Scrum..." data-en="Practical step-by-step guide to implement Scrum...">
+                                    Guia prático passo a passo para implementar Scrum...
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-portal">
+        <div class="container">
+            <div class="footer-content-portal">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo_scrum.svg" alt="Logo Scrum.com.br" class="footer-logo">
+                    <p>Portal especializado em Scrum, metodologias ágeis, IA e Big Data com artigos práticos e insights valiosos para profissionais.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📎</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Guias</h3>
+                        <ul>
+                            <li><a href="../pages/sobre-scrum.html">Fundamentos</a></li>
+                            <li><a href="../pages/sprint-management.html">Sprint Management</a></li>
+                            <li><a href="../pages/sprint-planning-guide.html">Sprint Planning</a></li>
+                            <li><a href="../pages/scrum-ceremonies.html">Cerimônias</a></li>
+                            <li><a href="../pages/product-backlog-management.html">Product Backlog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="../pages/tasktracker.html">TaskTracker</a></li>
+                            <li><a href="../pages/blog.html">Blog</a></li>
+                            <li><a href="../pages/contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Parceiros</h3>
+                        <ul>
+                            <li><a href="https://www.oworkshop.com.br" target="_blank">OWorkshop</a></li>
+                            <li><a href="https://www.dssbr.com.br" target="_blank">Data Science Summit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scrum.com.br. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function shareArticle(platform) {
+            const url = window.location.href;
+            const title = document.querySelector('.article-title').textContent;
+            
+            const shareUrls = {
+                linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+                twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+                whatsapp: `https://wa.me/?text=${encodeURIComponent(title + ' ' + url)}`
+            };
+            
+            if (shareUrls[platform]) {
+                window.open(shareUrls[platform], '_blank', 'width=600,height=400');
+            }
+        }
+        
+        function copyArticleLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                showNotification(
+                    currentLanguage === 'pt-BR' ? 
+                    'Link copiado para a área de transferência!' : 
+                    'Link copied to clipboard!',
+                    'success'
+                );
+            });
+        }
+    </script>
+</body>
+</html>
